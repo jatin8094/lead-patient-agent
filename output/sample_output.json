@@ -1,0 +1,4817 @@
+{
+  "pipeline_run_summary": {
+    "total_records": 27,
+    "leads": 12,
+    "patients": 15,
+    "invalid_records": 1,
+    "delivery_stats": {
+      "delivered": 27,
+      "dead_lettered": 0,
+      "target": "local"
+    }
+  },
+  "records": [
+    {
+      "input_record": {
+        "id": "lead-L001",
+        "source": "linkedin_lead",
+        "name": "Priya Sharma",
+        "contact_info": {
+          "email": "priya.sharma@nimbuslog.com",
+          "phone": "+91-98200-11223",
+          "preferred_channel": "email"
+        },
+        "context": {
+          "job_title": "VP of Operations",
+          "company": "Nimbus Logistics",
+          "company_size": "201-500",
+          "industry": "Logistics",
+          "location": "Mumbai India",
+          "last_activity": "Liked a post about supply chain automation 2 days ago",
+          "connection_degree": "2nd",
+          "notes": "Downloaded our warehouse automation whitepaper last week"
+        },
+        "priority_signal": "high_intent",
+        "raw_payload": {
+          "lead_id": "L001",
+          "full_name": "Priya Sharma",
+          "job_title": "VP of Operations",
+          "company": "Nimbus Logistics",
+          "company_size": "201-500",
+          "industry": "Logistics",
+          "linkedin_url": "https://linkedin.com/in/priyasharma-ops",
+          "email": "priya.sharma@nimbuslog.com",
+          "phone": "+91-98200-11223",
+          "location": "Mumbai India",
+          "last_activity": "Liked a post about supply chain automation 2 days ago",
+          "connection_degree": "2nd",
+          "notes": "Downloaded our warehouse automation whitepaper last week"
+        },
+        "ingested_at": "2026-09-02T17:59:47.023038+00:00",
+        "is_valid": true,
+        "validation_errors": []
+      },
+      "agent_reasoning": {
+        "record_id": "lead-L001",
+        "source": "linkedin_lead",
+        "classification": "hot",
+        "action": "email_personal_outreach",
+        "message": "Hi Priya, noticed your activity around Nimbus Logistics -- given your work as VP of Operations, thought it's worth a quick conversation about where we could help. Open to 15 minutes this week?",
+        "rationale": "Classified as hot based on priority_signal='high_intent' derived from recent activity/notes. Chose email_personal_outreach as the lowest-friction channel given available contact info.",
+        "escalate": false
+      },
+      "cms_payload_sent": {
+        "external_id": "lead-L001",
+        "source_system": "linkedin_lead",
+        "contact": {
+          "name": "Priya Sharma",
+          "email": "priya.sharma@nimbuslog.com",
+          "phone": "+91-98200-11223",
+          "preferred_channel": "email"
+        },
+        "classification": "hot",
+        "recommended_action": "email_personal_outreach",
+        "escalate": false,
+        "generated_message": "Hi Priya, noticed your activity around Nimbus Logistics -- given your work as VP of Operations, thought it's worth a quick conversation about where we could help. Open to 15 minutes this week?",
+        "agent_rationale": "Classified as hot based on priority_signal='high_intent' derived from recent activity/notes. Chose email_personal_outreach as the lowest-friction channel given available contact info.",
+        "record_valid": true,
+        "validation_errors": [],
+        "pushed_at": "2026-09-02T18:00:52.912625+00:00",
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "input_record": {
+        "id": "lead-L002",
+        "source": "linkedin_lead",
+        "name": "David Chen",
+        "contact_info": {
+          "email": null,
+          "phone": "+1-415-555-0142",
+          "preferred_channel": "phone"
+        },
+        "context": {
+          "job_title": "Head of Talent Acquisition",
+          "company": "BrightPeak Software",
+          "company_size": "51-200",
+          "industry": "Software",
+          "location": "San Francisco CA",
+          "last_activity": "Commented on a hiring trends article yesterday",
+          "connection_degree": "1st",
+          "notes": "Actively posting about scaling eng hiring in Q3"
+        },
+        "priority_signal": "warm",
+        "raw_payload": {
+          "lead_id": "L002",
+          "full_name": "David Chen",
+          "job_title": "Head of Talent Acquisition",
+          "company": "BrightPeak Software",
+          "company_size": "51-200",
+          "industry": "Software",
+          "linkedin_url": "https://linkedin.com/in/davidchen-hr",
+          "email": "",
+          "phone": "+1-415-555-0142",
+          "location": "San Francisco CA",
+          "last_activity": "Commented on a hiring trends article yesterday",
+          "connection_degree": "1st",
+          "notes": "Actively posting about scaling eng hiring in Q3"
+        },
+        "ingested_at": "2026-09-02T17:59:47.023087+00:00",
+        "is_valid": true,
+        "validation_errors": []
+      },
+      "agent_reasoning": {
+        "record_id": "lead-L002",
+        "source": "linkedin_lead",
+        "classification": "warm",
+        "action": "email_personal_outreach",
+        "message": "Hi David, noticed your activity around BrightPeak Software -- given your work as Head of Talent Acquisition, thought it's worth a quick conversation about where we could help. Open to 15 minutes this week?",
+        "rationale": "Classified as warm based on priority_signal='warm' derived from recent activity/notes. Chose email_personal_outreach as the lowest-friction channel given available contact info.",
+        "escalate": false
+      },
+      "cms_payload_sent": {
+        "external_id": "lead-L002",
+        "source_system": "linkedin_lead",
+        "contact": {
+          "name": "David Chen",
+          "email": null,
+          "phone": "+1-415-555-0142",
+          "preferred_channel": "phone"
+        },
+        "classification": "warm",
+        "recommended_action": "email_personal_outreach",
+        "escalate": false,
+        "generated_message": "Hi David, noticed your activity around BrightPeak Software -- given your work as Head of Talent Acquisition, thought it's worth a quick conversation about where we could help. Open to 15 minutes this week?",
+        "agent_rationale": "Classified as warm based on priority_signal='warm' derived from recent activity/notes. Chose email_personal_outreach as the lowest-friction channel given available contact info.",
+        "record_valid": true,
+        "validation_errors": [],
+        "pushed_at": "2026-09-02T18:00:52.912688+00:00",
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "input_record": {
+        "id": "lead-L003",
+        "source": "linkedin_lead",
+        "name": "Amara Okafor",
+        "contact_info": {
+          "email": "amara@lagoscare.ng",
+          "phone": null,
+          "preferred_channel": "email"
+        },
+        "context": {
+          "job_title": "Founder & CEO",
+          "company": "LagosCare Clinics",
+          "company_size": "11-50",
+          "industry": "Healthcare",
+          "location": "Lagos Nigeria",
+          "last_activity": "No activity in 60 days",
+          "connection_degree": "3rd",
+          "notes": "Cold list import - no prior engagement"
+        },
+        "priority_signal": "cold",
+        "raw_payload": {
+          "lead_id": "L003",
+          "full_name": "Amara Okafor",
+          "job_title": "Founder & CEO",
+          "company": "LagosCare Clinics",
+          "company_size": "11-50",
+          "industry": "Healthcare",
+          "linkedin_url": "https://linkedin.com/in/amaraokafor",
+          "email": "amara@lagoscare.ng",
+          "phone": "",
+          "location": "Lagos Nigeria",
+          "last_activity": "No activity in 60 days",
+          "connection_degree": "3rd",
+          "notes": "Cold list import - no prior engagement"
+        },
+        "ingested_at": "2026-09-02T17:59:47.023114+00:00",
+        "is_valid": true,
+        "validation_errors": []
+      },
+      "agent_reasoning": {
+        "record_id": "lead-L003",
+        "source": "linkedin_lead",
+        "classification": "cold",
+        "action": "email_low_touch_nurture",
+        "message": "Hi Amara, noticed your activity around LagosCare Clinics -- given your work as Founder & CEO, thought it's worth a quick conversation about where we could help. Open to 15 minutes this week?",
+        "rationale": "Classified as cold based on priority_signal='cold' derived from recent activity/notes. Chose email_low_touch_nurture as the lowest-friction channel given available contact info.",
+        "escalate": false
+      },
+      "cms_payload_sent": {
+        "external_id": "lead-L003",
+        "source_system": "linkedin_lead",
+        "contact": {
+          "name": "Amara Okafor",
+          "email": "amara@lagoscare.ng",
+          "phone": null,
+          "preferred_channel": "email"
+        },
+        "classification": "cold",
+        "recommended_action": "email_low_touch_nurture",
+        "escalate": false,
+        "generated_message": "Hi Amara, noticed your activity around LagosCare Clinics -- given your work as Founder & CEO, thought it's worth a quick conversation about where we could help. Open to 15 minutes this week?",
+        "agent_rationale": "Classified as cold based on priority_signal='cold' derived from recent activity/notes. Chose email_low_touch_nurture as the lowest-friction channel given available contact info.",
+        "record_valid": true,
+        "validation_errors": [],
+        "pushed_at": "2026-09-02T18:00:52.912732+00:00",
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "input_record": {
+        "id": "lead-L004",
+        "source": "linkedin_lead",
+        "name": "Rajesh Iyer",
+        "contact_info": {
+          "email": "rajesh.iyer@coastalbank.in",
+          "phone": "+91-90000-33445",
+          "preferred_channel": "email"
+        },
+        "context": {
+          "job_title": "IT Director",
+          "company": "Coastal Bank Ltd",
+          "company_size": "1001-5000",
+          "industry": "Banking",
+          "location": "Bengaluru India",
+          "last_activity": "Attended our webinar on core banking APIs last month",
+          "connection_degree": "2nd",
+          "notes": "Requested a demo via website form on 2026-08-20"
+        },
+        "priority_signal": "high_intent",
+        "raw_payload": {
+          "lead_id": "L004",
+          "full_name": "Rajesh Iyer",
+          "job_title": "IT Director",
+          "company": "Coastal Bank Ltd",
+          "company_size": "1001-5000",
+          "industry": "Banking",
+          "linkedin_url": "https://linkedin.com/in/rajeshiyer-it",
+          "email": "rajesh.iyer@coastalbank.in",
+          "phone": "+91-90000-33445",
+          "location": "Bengaluru India",
+          "last_activity": "Attended our webinar on core banking APIs last month",
+          "connection_degree": "2nd",
+          "notes": "Requested a demo via website form on 2026-08-20"
+        },
+        "ingested_at": "2026-09-02T17:59:47.023133+00:00",
+        "is_valid": true,
+        "validation_errors": []
+      },
+      "agent_reasoning": {
+        "record_id": "lead-L004",
+        "source": "linkedin_lead",
+        "classification": "hot",
+        "action": "email_personal_outreach",
+        "message": "Hi Rajesh, noticed your activity around Coastal Bank Ltd -- given your work as IT Director, thought it's worth a quick conversation about where we could help. Open to 15 minutes this week?",
+        "rationale": "Classified as hot based on priority_signal='high_intent' derived from recent activity/notes. Chose email_personal_outreach as the lowest-friction channel given available contact info.",
+        "escalate": false
+      },
+      "cms_payload_sent": {
+        "external_id": "lead-L004",
+        "source_system": "linkedin_lead",
+        "contact": {
+          "name": "Rajesh Iyer",
+          "email": "rajesh.iyer@coastalbank.in",
+          "phone": "+91-90000-33445",
+          "preferred_channel": "email"
+        },
+        "classification": "hot",
+        "recommended_action": "email_personal_outreach",
+        "escalate": false,
+        "generated_message": "Hi Rajesh, noticed your activity around Coastal Bank Ltd -- given your work as IT Director, thought it's worth a quick conversation about where we could help. Open to 15 minutes this week?",
+        "agent_rationale": "Classified as hot based on priority_signal='high_intent' derived from recent activity/notes. Chose email_personal_outreach as the lowest-friction channel given available contact info.",
+        "record_valid": true,
+        "validation_errors": [],
+        "pushed_at": "2026-09-02T18:00:52.912771+00:00",
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "input_record": {
+        "id": "lead-L005",
+        "source": "linkedin_lead",
+        "name": "Emily Park",
+        "contact_info": {
+          "email": "emily@parkandco.io",
+          "phone": "+1-212-555-0199",
+          "preferred_channel": "email"
+        },
+        "context": {
+          "job_title": "Founder",
+          "company": "Park & Co Consulting",
+          "company_size": "1-10",
+          "industry": "Consulting",
+          "location": "New York NY",
+          "last_activity": "Shared our case study post 3 days ago",
+          "connection_degree": "1st",
+          "notes": "Replied positively to a cold InMail"
+        },
+        "priority_signal": "high_intent",
+        "raw_payload": {
+          "lead_id": "L005",
+          "full_name": "Emily Park",
+          "job_title": "Founder",
+          "company": "Park & Co Consulting",
+          "company_size": "1-10",
+          "industry": "Consulting",
+          "linkedin_url": "https://linkedin.com/in/emilypark-consult",
+          "email": "emily@parkandco.io",
+          "phone": "+1-212-555-0199",
+          "location": "New York NY",
+          "last_activity": "Shared our case study post 3 days ago",
+          "connection_degree": "1st",
+          "notes": "Replied positively to a cold InMail"
+        },
+        "ingested_at": "2026-09-02T17:59:47.023150+00:00",
+        "is_valid": true,
+        "validation_errors": []
+      },
+      "agent_reasoning": {
+        "record_id": "lead-L005",
+        "source": "linkedin_lead",
+        "classification": "hot",
+        "action": "email_personal_outreach",
+        "message": "Hi Emily, noticed your activity around Park & Co Consulting -- given your work as Founder, thought it's worth a quick conversation about where we could help. Open to 15 minutes this week?",
+        "rationale": "Classified as hot based on priority_signal='high_intent' derived from recent activity/notes. Chose email_personal_outreach as the lowest-friction channel given available contact info.",
+        "escalate": false
+      },
+      "cms_payload_sent": {
+        "external_id": "lead-L005",
+        "source_system": "linkedin_lead",
+        "contact": {
+          "name": "Emily Park",
+          "email": "emily@parkandco.io",
+          "phone": "+1-212-555-0199",
+          "preferred_channel": "email"
+        },
+        "classification": "hot",
+        "recommended_action": "email_personal_outreach",
+        "escalate": false,
+        "generated_message": "Hi Emily, noticed your activity around Park & Co Consulting -- given your work as Founder, thought it's worth a quick conversation about where we could help. Open to 15 minutes this week?",
+        "agent_rationale": "Classified as hot based on priority_signal='high_intent' derived from recent activity/notes. Chose email_personal_outreach as the lowest-friction channel given available contact info.",
+        "record_valid": true,
+        "validation_errors": [],
+        "pushed_at": "2026-09-02T18:00:52.912812+00:00",
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "input_record": {
+        "id": "lead-L006",
+        "source": "linkedin_lead",
+        "name": "Mohammed Al-Farsi",
+        "contact_info": {
+          "email": null,
+          "phone": "+971-50-123-4567",
+          "preferred_channel": "phone"
+        },
+        "context": {
+          "job_title": "Procurement Manager",
+          "company": "Gulf Steel Industries",
+          "company_size": "501-1000",
+          "industry": "Manufacturing",
+          "location": "Dubai UAE",
+          "last_activity": "No activity recorded",
+          "connection_degree": "3rd",
+          "notes": "Bounced email on file - needs verification"
+        },
+        "priority_signal": "cold",
+        "raw_payload": {
+          "lead_id": "L006",
+          "full_name": "Mohammed Al-Farsi",
+          "job_title": "Procurement Manager",
+          "company": "Gulf Steel Industries",
+          "company_size": "501-1000",
+          "industry": "Manufacturing",
+          "linkedin_url": "https://linkedin.com/in/malfarsi",
+          "email": "",
+          "phone": "+971-50-123-4567",
+          "location": "Dubai UAE",
+          "last_activity": "No activity recorded",
+          "connection_degree": "3rd",
+          "notes": "Bounced email on file - needs verification"
+        },
+        "ingested_at": "2026-09-02T17:59:47.023166+00:00",
+        "is_valid": true,
+        "validation_errors": []
+      },
+      "agent_reasoning": {
+        "record_id": "lead-L006",
+        "source": "linkedin_lead",
+        "classification": "cold",
+        "action": "email_low_touch_nurture",
+        "message": "Hi Mohammed, noticed your activity around Gulf Steel Industries -- given your work as Procurement Manager, thought it's worth a quick conversation about where we could help. Open to 15 minutes this week?",
+        "rationale": "Classified as cold based on priority_signal='cold' derived from recent activity/notes. Chose email_low_touch_nurture as the lowest-friction channel given available contact info.",
+        "escalate": false
+      },
+      "cms_payload_sent": {
+        "external_id": "lead-L006",
+        "source_system": "linkedin_lead",
+        "contact": {
+          "name": "Mohammed Al-Farsi",
+          "email": null,
+          "phone": "+971-50-123-4567",
+          "preferred_channel": "phone"
+        },
+        "classification": "cold",
+        "recommended_action": "email_low_touch_nurture",
+        "escalate": false,
+        "generated_message": "Hi Mohammed, noticed your activity around Gulf Steel Industries -- given your work as Procurement Manager, thought it's worth a quick conversation about where we could help. Open to 15 minutes this week?",
+        "agent_rationale": "Classified as cold based on priority_signal='cold' derived from recent activity/notes. Chose email_low_touch_nurture as the lowest-friction channel given available contact info.",
+        "record_valid": true,
+        "validation_errors": [],
+        "pushed_at": "2026-09-02T18:00:52.912838+00:00",
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "input_record": {
+        "id": "lead-L007",
+        "source": "linkedin_lead",
+        "name": "Laura Fischer",
+        "contact_info": {
+          "email": "laura.fischer@medloop.de",
+          "phone": "+49-176-5550123",
+          "preferred_channel": "email"
+        },
+        "context": {
+          "job_title": "Chief Technology Officer",
+          "company": "MedLoop GmbH",
+          "company_size": "51-200",
+          "industry": "Health Tech",
+          "location": "Berlin Germany",
+          "last_activity": "Viewed our profile twice this week",
+          "connection_degree": "1st",
+          "notes": "Company just raised Series A - hiring signal"
+        },
+        "priority_signal": "warm",
+        "raw_payload": {
+          "lead_id": "L007",
+          "full_name": "Laura Fischer",
+          "job_title": "Chief Technology Officer",
+          "company": "MedLoop GmbH",
+          "company_size": "51-200",
+          "industry": "Health Tech",
+          "linkedin_url": "https://linkedin.com/in/laurafischer-cto",
+          "email": "laura.fischer@medloop.de",
+          "phone": "+49-176-5550123",
+          "location": "Berlin Germany",
+          "last_activity": "Viewed our profile twice this week",
+          "connection_degree": "1st",
+          "notes": "Company just raised Series A - hiring signal"
+        },
+        "ingested_at": "2026-09-02T17:59:47.023189+00:00",
+        "is_valid": true,
+        "validation_errors": []
+      },
+      "agent_reasoning": {
+        "record_id": "lead-L007",
+        "source": "linkedin_lead",
+        "classification": "warm",
+        "action": "email_personal_outreach",
+        "message": "Hi Laura, noticed your activity around MedLoop GmbH -- given your work as Chief Technology Officer, thought it's worth a quick conversation about where we could help. Open to 15 minutes this week?",
+        "rationale": "Classified as warm based on priority_signal='warm' derived from recent activity/notes. Chose email_personal_outreach as the lowest-friction channel given available contact info.",
+        "escalate": false
+      },
+      "cms_payload_sent": {
+        "external_id": "lead-L007",
+        "source_system": "linkedin_lead",
+        "contact": {
+          "name": "Laura Fischer",
+          "email": "laura.fischer@medloop.de",
+          "phone": "+49-176-5550123",
+          "preferred_channel": "email"
+        },
+        "classification": "warm",
+        "recommended_action": "email_personal_outreach",
+        "escalate": false,
+        "generated_message": "Hi Laura, noticed your activity around MedLoop GmbH -- given your work as Chief Technology Officer, thought it's worth a quick conversation about where we could help. Open to 15 minutes this week?",
+        "agent_rationale": "Classified as warm based on priority_signal='warm' derived from recent activity/notes. Chose email_personal_outreach as the lowest-friction channel given available contact info.",
+        "record_valid": true,
+        "validation_errors": [],
+        "pushed_at": "2026-09-02T18:00:52.912860+00:00",
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "input_record": {
+        "id": "lead-L008",
+        "source": "linkedin_lead",
+        "name": "Tomás Rodríguez",
+        "contact_info": {
+          "email": "tomas.rodriguez@andesretail.com",
+          "phone": "+56-9-8888-2222",
+          "preferred_channel": "email"
+        },
+        "context": {
+          "job_title": "Regional Sales Director",
+          "company": "Andes Retail Group",
+          "company_size": "1001-5000",
+          "industry": "Retail",
+          "location": "Santiago Chile",
+          "last_activity": "Commented asking about pricing on our post",
+          "connection_degree": "2nd",
+          "notes": "High intent - explicit pricing question"
+        },
+        "priority_signal": "high_intent",
+        "raw_payload": {
+          "lead_id": "L008",
+          "full_name": "Tomás Rodríguez",
+          "job_title": "Regional Sales Director",
+          "company": "Andes Retail Group",
+          "company_size": "1001-5000",
+          "industry": "Retail",
+          "linkedin_url": "https://linkedin.com/in/tomasrodriguez-sales",
+          "email": "tomas.rodriguez@andesretail.com",
+          "phone": "+56-9-8888-2222",
+          "location": "Santiago Chile",
+          "last_activity": "Commented asking about pricing on our post",
+          "connection_degree": "2nd",
+          "notes": "High intent - explicit pricing question"
+        },
+        "ingested_at": "2026-09-02T17:59:47.023205+00:00",
+        "is_valid": true,
+        "validation_errors": []
+      },
+      "agent_reasoning": {
+        "record_id": "lead-L008",
+        "source": "linkedin_lead",
+        "classification": "hot",
+        "action": "email_personal_outreach",
+        "message": "Hi Tomás, noticed your activity around Andes Retail Group -- given your work as Regional Sales Director, thought it's worth a quick conversation about where we could help. Open to 15 minutes this week?",
+        "rationale": "Classified as hot based on priority_signal='high_intent' derived from recent activity/notes. Chose email_personal_outreach as the lowest-friction channel given available contact info.",
+        "escalate": false
+      },
+      "cms_payload_sent": {
+        "external_id": "lead-L008",
+        "source_system": "linkedin_lead",
+        "contact": {
+          "name": "Tomás Rodríguez",
+          "email": "tomas.rodriguez@andesretail.com",
+          "phone": "+56-9-8888-2222",
+          "preferred_channel": "email"
+        },
+        "classification": "hot",
+        "recommended_action": "email_personal_outreach",
+        "escalate": false,
+        "generated_message": "Hi Tomás, noticed your activity around Andes Retail Group -- given your work as Regional Sales Director, thought it's worth a quick conversation about where we could help. Open to 15 minutes this week?",
+        "agent_rationale": "Classified as hot based on priority_signal='high_intent' derived from recent activity/notes. Chose email_personal_outreach as the lowest-friction channel given available contact info.",
+        "record_valid": true,
+        "validation_errors": [],
+        "pushed_at": "2026-09-02T18:00:52.912881+00:00",
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "input_record": {
+        "id": "lead-L009",
+        "source": "linkedin_lead",
+        "name": "Grace Wanjiru",
+        "contact_info": {
+          "email": "grace.wanjiru@savannahfoods.ke",
+          "phone": "+254-711-223344",
+          "preferred_channel": "email"
+        },
+        "context": {
+          "job_title": "HR Business Partner",
+          "company": "Savannah Foods",
+          "company_size": "201-500",
+          "industry": "Food & Beverage",
+          "location": "Nairobi Kenya",
+          "last_activity": "No activity in 90 days",
+          "connection_degree": "3rd",
+          "notes": "Old list"
+        },
+        "priority_signal": "cold",
+        "raw_payload": {
+          "lead_id": "L009",
+          "full_name": "Grace Wanjiru",
+          "job_title": "HR Business Partner",
+          "company": "Savannah Foods",
+          "company_size": "201-500",
+          "industry": "Food & Beverage",
+          "linkedin_url": "https://linkedin.com/in/gracewanjiru",
+          "email": "grace.wanjiru@savannahfoods.ke",
+          "phone": "+254-711-223344",
+          "location": "Nairobi Kenya",
+          "last_activity": "No activity in 90 days",
+          "connection_degree": "3rd",
+          "notes": "Old list",
+          "null": [
+            " unverified title"
+          ]
+        },
+        "ingested_at": "2026-09-02T17:59:47.023227+00:00",
+        "is_valid": true,
+        "validation_errors": []
+      },
+      "agent_reasoning": {
+        "record_id": "lead-L009",
+        "source": "linkedin_lead",
+        "classification": "cold",
+        "action": "email_low_touch_nurture",
+        "message": "Hi Grace, noticed your activity around Savannah Foods -- given your work as HR Business Partner, thought it's worth a quick conversation about where we could help. Open to 15 minutes this week?",
+        "rationale": "Classified as cold based on priority_signal='cold' derived from recent activity/notes. Chose email_low_touch_nurture as the lowest-friction channel given available contact info.",
+        "escalate": false
+      },
+      "cms_payload_sent": {
+        "external_id": "lead-L009",
+        "source_system": "linkedin_lead",
+        "contact": {
+          "name": "Grace Wanjiru",
+          "email": "grace.wanjiru@savannahfoods.ke",
+          "phone": "+254-711-223344",
+          "preferred_channel": "email"
+        },
+        "classification": "cold",
+        "recommended_action": "email_low_touch_nurture",
+        "escalate": false,
+        "generated_message": "Hi Grace, noticed your activity around Savannah Foods -- given your work as HR Business Partner, thought it's worth a quick conversation about where we could help. Open to 15 minutes this week?",
+        "agent_rationale": "Classified as cold based on priority_signal='cold' derived from recent activity/notes. Chose email_low_touch_nurture as the lowest-friction channel given available contact info.",
+        "record_valid": true,
+        "validation_errors": [],
+        "pushed_at": "2026-09-02T18:00:52.912907+00:00",
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "input_record": {
+        "id": "lead-L010",
+        "source": "linkedin_lead",
+        "name": "Kenji Watanabe",
+        "contact_info": {
+          "email": "kenji.watanabe@sorarobotics.jp",
+          "phone": "+81-90-1234-5678",
+          "preferred_channel": "email"
+        },
+        "context": {
+          "job_title": "VP Engineering",
+          "company": "Sora Robotics",
+          "company_size": "51-200",
+          "industry": "Robotics",
+          "location": "Tokyo Japan",
+          "last_activity": "Reacted to our product launch post today",
+          "connection_degree": "1st",
+          "notes": "Booked intro call for next week already - lifecycle should not duplicate"
+        },
+        "priority_signal": "high_intent",
+        "raw_payload": {
+          "lead_id": "L010",
+          "full_name": "Kenji Watanabe",
+          "job_title": "VP Engineering",
+          "company": "Sora Robotics",
+          "company_size": "51-200",
+          "industry": "Robotics",
+          "linkedin_url": "https://linkedin.com/in/kenjiwatanabe-eng",
+          "email": "kenji.watanabe@sorarobotics.jp",
+          "phone": "+81-90-1234-5678",
+          "location": "Tokyo Japan",
+          "last_activity": "Reacted to our product launch post today",
+          "connection_degree": "1st",
+          "notes": "Booked intro call for next week already - lifecycle should not duplicate"
+        },
+        "ingested_at": "2026-09-02T17:59:47.023249+00:00",
+        "is_valid": true,
+        "validation_errors": []
+      },
+      "agent_reasoning": {
+        "record_id": "lead-L010",
+        "source": "linkedin_lead",
+        "classification": "hot",
+        "action": "email_personal_outreach",
+        "message": "Hi Kenji, noticed your activity around Sora Robotics -- given your work as VP Engineering, thought it's worth a quick conversation about where we could help. Open to 15 minutes this week?",
+        "rationale": "Classified as hot based on priority_signal='high_intent' derived from recent activity/notes. Chose email_personal_outreach as the lowest-friction channel given available contact info.",
+        "escalate": false
+      },
+      "cms_payload_sent": {
+        "external_id": "lead-L010",
+        "source_system": "linkedin_lead",
+        "contact": {
+          "name": "Kenji Watanabe",
+          "email": "kenji.watanabe@sorarobotics.jp",
+          "phone": "+81-90-1234-5678",
+          "preferred_channel": "email"
+        },
+        "classification": "hot",
+        "recommended_action": "email_personal_outreach",
+        "escalate": false,
+        "generated_message": "Hi Kenji, noticed your activity around Sora Robotics -- given your work as VP Engineering, thought it's worth a quick conversation about where we could help. Open to 15 minutes this week?",
+        "agent_rationale": "Classified as hot based on priority_signal='high_intent' derived from recent activity/notes. Chose email_personal_outreach as the lowest-friction channel given available contact info.",
+        "record_valid": true,
+        "validation_errors": [],
+        "pushed_at": "2026-09-02T18:00:52.912930+00:00",
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "input_record": {
+        "id": "lead-L011",
+        "source": "linkedin_lead",
+        "name": "",
+        "contact_info": {
+          "email": "not-an-email",
+          "phone": "12345",
+          "preferred_channel": "email"
+        },
+        "context": {
+          "job_title": "Marketing Manager",
+          "company": "Unknown Co",
+          "company_size": "",
+          "industry": "",
+          "location": "",
+          "last_activity": "",
+          "connection_degree": "",
+          "notes": "Malformed record for failure-path testing - missing name and invalid email"
+        },
+        "priority_signal": "warm",
+        "raw_payload": {
+          "lead_id": "L011",
+          "full_name": "",
+          "job_title": "Marketing Manager",
+          "company": "Unknown Co",
+          "company_size": "",
+          "industry": "",
+          "linkedin_url": "https://linkedin.com/in/badrecord-test",
+          "email": "not-an-email",
+          "phone": "12345",
+          "location": "",
+          "last_activity": "",
+          "connection_degree": "",
+          "notes": "Malformed record for failure-path testing - missing name and invalid email"
+        },
+        "ingested_at": "2026-09-02T17:59:47.023269+00:00",
+        "is_valid": false,
+        "validation_errors": [
+          "missing full_name",
+          "malformed email: 'not-an-email'"
+        ]
+      },
+      "agent_reasoning": {
+        "record_id": "lead-L011",
+        "source": "linkedin_lead",
+        "classification": "unclassified",
+        "action": "needs_review",
+        "message": "",
+        "rationale": "Routed to manual review without generating outreach: missing full_name; malformed email: 'not-an-email'",
+        "escalate": true
+      },
+      "cms_payload_sent": {
+        "external_id": "lead-L011",
+        "source_system": "linkedin_lead",
+        "contact": {
+          "name": "",
+          "email": "not-an-email",
+          "phone": "12345",
+          "preferred_channel": "email"
+        },
+        "classification": "unclassified",
+        "recommended_action": "needs_review",
+        "escalate": true,
+        "generated_message": "",
+        "agent_rationale": "Routed to manual review without generating outreach: missing full_name; malformed email: 'not-an-email'",
+        "record_valid": false,
+        "validation_errors": [
+          "missing full_name",
+          "malformed email: 'not-an-email'"
+        ],
+        "pushed_at": "2026-09-02T18:00:52.912956+00:00",
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "input_record": {
+        "id": "lead-L012",
+        "source": "linkedin_lead",
+        "name": "Fatima Zahra",
+        "contact_info": {
+          "email": "fatima.zahra@cgh.ma",
+          "phone": "+212-661-223344",
+          "preferred_channel": "email"
+        },
+        "context": {
+          "job_title": "Director of Nursing",
+          "company": "Casablanca General Hospital",
+          "company_size": "1001-5000",
+          "industry": "Healthcare",
+          "location": "Casablanca Morocco",
+          "last_activity": "Downloaded staffing shortage report yesterday",
+          "connection_degree": "2nd",
+          "notes": "Hospital system evaluating new vendors this quarter"
+        },
+        "priority_signal": "high_intent",
+        "raw_payload": {
+          "lead_id": "L012",
+          "full_name": "Fatima Zahra",
+          "job_title": "Director of Nursing",
+          "company": "Casablanca General Hospital",
+          "company_size": "1001-5000",
+          "industry": "Healthcare",
+          "linkedin_url": "https://linkedin.com/in/fatimazahra-rn",
+          "email": "fatima.zahra@cgh.ma",
+          "phone": "+212-661-223344",
+          "location": "Casablanca Morocco",
+          "last_activity": "Downloaded staffing shortage report yesterday",
+          "connection_degree": "2nd",
+          "notes": "Hospital system evaluating new vendors this quarter"
+        },
+        "ingested_at": "2026-09-02T17:59:47.023618+00:00",
+        "is_valid": true,
+        "validation_errors": []
+      },
+      "agent_reasoning": {
+        "record_id": "lead-L012",
+        "source": "linkedin_lead",
+        "classification": "hot",
+        "action": "email_personal_outreach",
+        "message": "Hi Fatima, noticed your activity around Casablanca General Hospital -- given your work as Director of Nursing, thought it's worth a quick conversation about where we could help. Open to 15 minutes this week?",
+        "rationale": "Classified as hot based on priority_signal='high_intent' derived from recent activity/notes. Chose email_personal_outreach as the lowest-friction channel given available contact info.",
+        "escalate": false
+      },
+      "cms_payload_sent": {
+        "external_id": "lead-L012",
+        "source_system": "linkedin_lead",
+        "contact": {
+          "name": "Fatima Zahra",
+          "email": "fatima.zahra@cgh.ma",
+          "phone": "+212-661-223344",
+          "preferred_channel": "email"
+        },
+        "classification": "hot",
+        "recommended_action": "email_personal_outreach",
+        "escalate": false,
+        "generated_message": "Hi Fatima, noticed your activity around Casablanca General Hospital -- given your work as Director of Nursing, thought it's worth a quick conversation about where we could help. Open to 15 minutes this week?",
+        "agent_rationale": "Classified as hot based on priority_signal='high_intent' derived from recent activity/notes. Chose email_personal_outreach as the lowest-friction channel given available contact info.",
+        "record_valid": true,
+        "validation_errors": [],
+        "pushed_at": "2026-09-02T18:00:52.912979+00:00",
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "input_record": {
+        "id": "patient-ae6225ec-c4c0-400f-bbcd-4aba181be869",
+        "source": "fhir_patient",
+        "name": "Margarita Montalvo",
+        "contact_info": {
+          "email": null,
+          "phone": "555-170-8010",
+          "preferred_channel": "phone"
+        },
+        "context": {
+          "age": 26,
+          "gender": "female",
+          "city": "Woburn",
+          "conditions": [],
+          "upcoming_or_recent_appointments": []
+        },
+        "priority_signal": "routine",
+        "raw_payload": {
+          "resourceType": "Patient",
+          "id": "ae6225ec-c4c0-400f-bbcd-4aba181be869",
+          "meta": {
+            "versionId": "4",
+            "lastUpdated": "2021-04-07T02:57:00.726-04:00",
+            "tag": [
+              {
+                "system": "https://smarthealthit.org/tags",
+                "code": "synthea-5-2019"
+              }
+            ]
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Generated by <a href=\"https://github.com/synthetichealth/synthea\">Synthea</a>.Version identifier: v2.4.0-100-g26a4b936\n .   Person seed: 6427662893985863017  Population seed: 1559319163074</div>"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+              "extension": [
+                {
+                  "url": "ombCategory",
+                  "valueCoding": {
+                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                    "code": "2135-2",
+                    "display": "Other"
+                  }
+                },
+                {
+                  "url": "text",
+                  "valueString": "Other"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+              "extension": [
+                {
+                  "url": "ombCategory",
+                  "valueCoding": {
+                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                    "code": "2186-5",
+                    "display": "Not Hispanic or Latino"
+                  }
+                },
+                {
+                  "url": "text",
+                  "valueString": "Not Hispanic or Latino"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+              "valueString": "Luz Razo"
+            },
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+              "valueCode": "F"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+              "valueAddress": {
+                "city": "Santiago",
+                "state": "Santiago Province",
+                "country": "CL"
+              }
+            },
+            {
+              "url": "http://synthetichealth.github.io/synthea/disability-adjusted-life-years",
+              "valueDecimal": 0.3086663633338392
+            },
+            {
+              "url": "http://synthetichealth.github.io/synthea/quality-adjusted-life-years",
+              "valueDecimal": 19.69133363666616
+            }
+          ],
+          "identifier": [
+            {
+              "system": "https://github.com/synthetichealth/synthea",
+              "value": "87ad8ed4-e0ef-498b-a2db-1d8d61368f8a"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "MR",
+                    "display": "Medical Record Number"
+                  }
+                ],
+                "text": "Medical Record Number"
+              },
+              "system": "http://hospital.smarthealthit.org",
+              "value": "87ad8ed4-e0ef-498b-a2db-1d8d61368f8a"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "SS",
+                    "display": "Social Security Number"
+                  }
+                ],
+                "text": "Social Security Number"
+              },
+              "system": "http://hl7.org/fhir/sid/us-ssn",
+              "value": "999-61-4286"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "DL",
+                    "display": "Driver's License"
+                  }
+                ],
+                "text": "Driver's License"
+              },
+              "system": "urn:oid:2.16.840.1.113883.4.3.25",
+              "value": "S99981746"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "PPN",
+                    "display": "Passport Number"
+                  }
+                ],
+                "text": "Passport Number"
+              },
+              "system": "http://standardhealthrecord.org/fhir/StructureDefinition/passportNumber",
+              "value": "X8111593X"
+            }
+          ],
+          "name": [
+            {
+              "use": "official",
+              "family": "Montalvo",
+              "given": [
+                "Margarita"
+              ],
+              "prefix": [
+                "Ms."
+              ]
+            }
+          ],
+          "telecom": [
+            {
+              "system": "phone",
+              "value": "555-170-8010",
+              "use": "home"
+            }
+          ],
+          "gender": "female",
+          "birthDate": "2000-06-16",
+          "address": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/geolocation",
+                  "extension": [
+                    {
+                      "url": "latitude",
+                      "valueDecimal": 42.48865900000001
+                    },
+                    {
+                      "url": "longitude",
+                      "valueDecimal": -71.154425
+                    }
+                  ]
+                }
+              ],
+              "line": [
+                "262 Paucek Light"
+              ],
+              "city": "Woburn",
+              "state": "Massachusetts",
+              "postalCode": "01801",
+              "country": "US"
+            }
+          ],
+          "maritalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+                "code": "S",
+                "display": "Never Married"
+              }
+            ],
+            "text": "Never Married"
+          },
+          "multipleBirthBoolean": false,
+          "communication": [
+            {
+              "language": {
+                "coding": [
+                  {
+                    "system": "urn:ietf:bcp:47",
+                    "code": "es",
+                    "display": "Spanish"
+                  }
+                ],
+                "text": "Spanish"
+              }
+            }
+          ]
+        },
+        "ingested_at": "2026-09-02T17:59:57.473741+00:00",
+        "is_valid": true,
+        "validation_errors": []
+      },
+      "agent_reasoning": {
+        "record_id": "patient-ae6225ec-c4c0-400f-bbcd-4aba181be869",
+        "source": "fhir_patient",
+        "classification": "routine",
+        "action": "send_routine_reminder",
+        "message": "Hello Margarita, this is a check-in regarding your recent visit. Please call our office to schedule your next appointment or let us know if you need anything before then.",
+        "rationale": "Classified as routine based on priority_signal='routine' (conditions on file: none). Chose send_routine_reminder to route this to the appropriate follow-up path.",
+        "escalate": false
+      },
+      "cms_payload_sent": {
+        "external_id": "patient-ae6225ec-c4c0-400f-bbcd-4aba181be869",
+        "source_system": "fhir_patient",
+        "contact": {
+          "name": "Margarita Montalvo",
+          "email": null,
+          "phone": "555-170-8010",
+          "preferred_channel": "phone"
+        },
+        "classification": "routine",
+        "recommended_action": "send_routine_reminder",
+        "escalate": false,
+        "generated_message": "Hello Margarita, this is a check-in regarding your recent visit. Please call our office to schedule your next appointment or let us know if you need anything before then.",
+        "agent_rationale": "Classified as routine based on priority_signal='routine' (conditions on file: none). Chose send_routine_reminder to route this to the appropriate follow-up path.",
+        "record_valid": true,
+        "validation_errors": [],
+        "pushed_at": "2026-09-02T18:00:52.913084+00:00",
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "input_record": {
+        "id": "patient-beaf00da-c197-4e72-8b27-7ee1131348f1",
+        "source": "fhir_patient",
+        "name": "Matt Mosciski",
+        "contact_info": {
+          "email": null,
+          "phone": "555-521-4442",
+          "preferred_channel": "phone"
+        },
+        "context": {
+          "age": 32,
+          "gender": "male",
+          "city": "New Bedford",
+          "conditions": [],
+          "upcoming_or_recent_appointments": []
+        },
+        "priority_signal": "routine",
+        "raw_payload": {
+          "resourceType": "Patient",
+          "id": "beaf00da-c197-4e72-8b27-7ee1131348f1",
+          "meta": {
+            "versionId": "4",
+            "lastUpdated": "2021-04-07T02:57:01.115-04:00",
+            "tag": [
+              {
+                "system": "https://smarthealthit.org/tags",
+                "code": "synthea-5-2019"
+              }
+            ]
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Generated by <a href=\"https://github.com/synthetichealth/synthea\">Synthea</a>.Version identifier: v2.4.0-100-g26a4b936\n .   Person seed: -4875553240484999050  Population seed: 1559319163074</div>"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+              "extension": [
+                {
+                  "url": "ombCategory",
+                  "valueCoding": {
+                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                    "code": "2106-3",
+                    "display": "White"
+                  }
+                },
+                {
+                  "url": "text",
+                  "valueString": "White"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+              "extension": [
+                {
+                  "url": "ombCategory",
+                  "valueCoding": {
+                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                    "code": "2186-5",
+                    "display": "Not Hispanic or Latino"
+                  }
+                },
+                {
+                  "url": "text",
+                  "valueString": "Not Hispanic or Latino"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+              "valueString": "Eliz Mraz"
+            },
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+              "valueCode": "M"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+              "valueAddress": {
+                "city": "Hanson",
+                "state": "Massachusetts",
+                "country": "US"
+              }
+            },
+            {
+              "url": "http://synthetichealth.github.io/synthea/disability-adjusted-life-years",
+              "valueDecimal": 0.2985262980022741
+            },
+            {
+              "url": "http://synthetichealth.github.io/synthea/quality-adjusted-life-years",
+              "valueDecimal": 25.701473701997728
+            }
+          ],
+          "identifier": [
+            {
+              "system": "https://github.com/synthetichealth/synthea",
+              "value": "11bfb5ea-d969-43ae-8411-953b246de98d"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "MR",
+                    "display": "Medical Record Number"
+                  }
+                ],
+                "text": "Medical Record Number"
+              },
+              "system": "http://hospital.smarthealthit.org",
+              "value": "11bfb5ea-d969-43ae-8411-953b246de98d"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "SS",
+                    "display": "Social Security Number"
+                  }
+                ],
+                "text": "Social Security Number"
+              },
+              "system": "http://hl7.org/fhir/sid/us-ssn",
+              "value": "999-40-7303"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "DL",
+                    "display": "Driver's License"
+                  }
+                ],
+                "text": "Driver's License"
+              },
+              "system": "urn:oid:2.16.840.1.113883.4.3.25",
+              "value": "S99984365"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "PPN",
+                    "display": "Passport Number"
+                  }
+                ],
+                "text": "Passport Number"
+              },
+              "system": "http://standardhealthrecord.org/fhir/StructureDefinition/passportNumber",
+              "value": "X26318405X"
+            }
+          ],
+          "name": [
+            {
+              "use": "official",
+              "family": "Mosciski",
+              "given": [
+                "Matt"
+              ],
+              "prefix": [
+                "Mr."
+              ]
+            }
+          ],
+          "telecom": [
+            {
+              "system": "phone",
+              "value": "555-521-4442",
+              "use": "home"
+            }
+          ],
+          "gender": "male",
+          "birthDate": "1994-07-02",
+          "address": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/geolocation",
+                  "extension": [
+                    {
+                      "url": "latitude",
+                      "valueDecimal": 41.661303
+                    },
+                    {
+                      "url": "longitude",
+                      "valueDecimal": -70.937913
+                    }
+                  ]
+                }
+              ],
+              "line": [
+                "1051 Durgan Trail"
+              ],
+              "city": "New Bedford",
+              "state": "Massachusetts",
+              "postalCode": "02740",
+              "country": "US"
+            }
+          ],
+          "maritalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+                "code": "S",
+                "display": "Never Married"
+              }
+            ],
+            "text": "Never Married"
+          },
+          "multipleBirthBoolean": false,
+          "communication": [
+            {
+              "language": {
+                "coding": [
+                  {
+                    "system": "urn:ietf:bcp:47",
+                    "code": "en-US",
+                    "display": "English"
+                  }
+                ],
+                "text": "English"
+              }
+            }
+          ]
+        },
+        "ingested_at": "2026-09-02T17:59:57.473805+00:00",
+        "is_valid": true,
+        "validation_errors": []
+      },
+      "agent_reasoning": {
+        "record_id": "patient-beaf00da-c197-4e72-8b27-7ee1131348f1",
+        "source": "fhir_patient",
+        "classification": "routine",
+        "action": "send_routine_reminder",
+        "message": "Hello Matt, this is a check-in regarding your recent visit. Please call our office to schedule your next appointment or let us know if you need anything before then.",
+        "rationale": "Classified as routine based on priority_signal='routine' (conditions on file: none). Chose send_routine_reminder to route this to the appropriate follow-up path.",
+        "escalate": false
+      },
+      "cms_payload_sent": {
+        "external_id": "patient-beaf00da-c197-4e72-8b27-7ee1131348f1",
+        "source_system": "fhir_patient",
+        "contact": {
+          "name": "Matt Mosciski",
+          "email": null,
+          "phone": "555-521-4442",
+          "preferred_channel": "phone"
+        },
+        "classification": "routine",
+        "recommended_action": "send_routine_reminder",
+        "escalate": false,
+        "generated_message": "Hello Matt, this is a check-in regarding your recent visit. Please call our office to schedule your next appointment or let us know if you need anything before then.",
+        "agent_rationale": "Classified as routine based on priority_signal='routine' (conditions on file: none). Chose send_routine_reminder to route this to the appropriate follow-up path.",
+        "record_valid": true,
+        "validation_errors": [],
+        "pushed_at": "2026-09-02T18:00:52.913178+00:00",
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "input_record": {
+        "id": "patient-0a616e8d-e5d1-463e-af36-c2a4d4803be5",
+        "source": "fhir_patient",
+        "name": "Peter Wunsch",
+        "contact_info": {
+          "email": null,
+          "phone": "555-281-1193",
+          "preferred_channel": "phone"
+        },
+        "context": {
+          "age": 70,
+          "gender": "female",
+          "city": "Duxbury",
+          "conditions": [],
+          "upcoming_or_recent_appointments": []
+        },
+        "priority_signal": "routine",
+        "raw_payload": {
+          "resourceType": "Patient",
+          "id": "0a616e8d-e5d1-463e-af36-c2a4d4803be5",
+          "meta": {
+            "versionId": "6",
+            "lastUpdated": "2022-12-20T01:54:51.239-05:00",
+            "tag": [
+              {
+                "system": "https://smarthealthit.org/tags",
+                "code": "synthea-5-2019"
+              }
+            ]
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Generated by <a href=\"https://github.com/synthetichealth/synthea\">Synthea</a>.Version identifier: v2.4.0-100-g26a4b936\n .   Person seed: -9141646181901241066  Population seed: 1559319163074</div>"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+              "extension": [
+                {
+                  "url": "ombCategory",
+                  "valueCoding": {
+                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                    "code": "2106-3",
+                    "display": "White"
+                  }
+                },
+                {
+                  "url": "text",
+                  "valueString": "White"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+              "extension": [
+                {
+                  "url": "ombCategory",
+                  "valueCoding": {
+                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                    "code": "2186-5",
+                    "display": "Not Hispanic or Latino"
+                  }
+                },
+                {
+                  "url": "text",
+                  "valueString": "Not Hispanic or Latino"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+              "valueString": "Ailene Lynch"
+            },
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+              "valueCode": "F"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+              "valueAddress": {
+                "city": "East Longmeadow",
+                "state": "Massachusetts",
+                "country": "US"
+              }
+            },
+            {
+              "url": "http://synthetichealth.github.io/synthea/disability-adjusted-life-years",
+              "valueDecimal": 0.3921820341516944
+            },
+            {
+              "url": "http://synthetichealth.github.io/synthea/quality-adjusted-life-years",
+              "valueDecimal": 63.607817965848305
+            }
+          ],
+          "identifier": [
+            {
+              "system": "https://github.com/synthetichealth/synthea",
+              "value": "da1c85b2-8e73-45f3-9238-c46654a6a66e"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "MR",
+                    "display": "Medical Record Number"
+                  }
+                ],
+                "text": "Medical Record Number"
+              },
+              "system": "http://hospital.smarthealthit.org",
+              "value": "da1c85b2-8e73-45f3-9238-c46654a6a66e"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "SS",
+                    "display": "Social Security Number"
+                  }
+                ],
+                "text": "Social Security Number"
+              },
+              "system": "http://hl7.org/fhir/sid/us-ssn",
+              "value": "999-42-2672"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "DL",
+                    "display": "Driver's License"
+                  }
+                ],
+                "text": "Driver's License"
+              },
+              "system": "urn:oid:2.16.840.1.113883.4.3.25",
+              "value": "S99956591"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "PPN",
+                    "display": "Passport Number"
+                  }
+                ],
+                "text": "Passport Number"
+              },
+              "system": "http://standardhealthrecord.org/fhir/StructureDefinition/passportNumber",
+              "value": "X4819211X"
+            }
+          ],
+          "name": [
+            {
+              "use": "official",
+              "family": "Wunsch",
+              "given": [
+                "Peter"
+              ],
+              "prefix": [
+                "Mrs."
+              ]
+            },
+            {
+              "use": "maiden",
+              "family": "Renner",
+              "given": [
+                "Peter"
+              ],
+              "prefix": [
+                "Mrs."
+              ]
+            }
+          ],
+          "telecom": [
+            {
+              "system": "phone",
+              "value": "555-281-1193",
+              "use": "home"
+            }
+          ],
+          "gender": "female",
+          "birthDate": "1956-04-15",
+          "address": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/geolocation",
+                  "extension": [
+                    {
+                      "url": "latitude",
+                      "valueDecimal": 42.044307
+                    },
+                    {
+                      "url": "longitude",
+                      "valueDecimal": -70.70604499999997
+                    }
+                  ]
+                }
+              ],
+              "line": [
+                "643 DuBuque Flat Suite 20"
+              ],
+              "city": "Duxbury",
+              "state": "Massachusetts",
+              "postalCode": "02332",
+              "country": "US"
+            }
+          ],
+          "maritalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+                "code": "M",
+                "display": "M"
+              }
+            ],
+            "text": "M"
+          },
+          "multipleBirthBoolean": false,
+          "communication": [
+            {
+              "language": {
+                "coding": [
+                  {
+                    "system": "urn:ietf:bcp:47",
+                    "code": "en-US",
+                    "display": "English"
+                  }
+                ],
+                "text": "English"
+              }
+            }
+          ]
+        },
+        "ingested_at": "2026-09-02T17:59:57.473839+00:00",
+        "is_valid": true,
+        "validation_errors": []
+      },
+      "agent_reasoning": {
+        "record_id": "patient-0a616e8d-e5d1-463e-af36-c2a4d4803be5",
+        "source": "fhir_patient",
+        "classification": "routine",
+        "action": "send_routine_reminder",
+        "message": "Hello Peter, this is a check-in regarding your recent visit. Please call our office to schedule your next appointment or let us know if you need anything before then.",
+        "rationale": "Classified as routine based on priority_signal='routine' (conditions on file: none). Chose send_routine_reminder to route this to the appropriate follow-up path.",
+        "escalate": false
+      },
+      "cms_payload_sent": {
+        "external_id": "patient-0a616e8d-e5d1-463e-af36-c2a4d4803be5",
+        "source_system": "fhir_patient",
+        "contact": {
+          "name": "Peter Wunsch",
+          "email": null,
+          "phone": "555-281-1193",
+          "preferred_channel": "phone"
+        },
+        "classification": "routine",
+        "recommended_action": "send_routine_reminder",
+        "escalate": false,
+        "generated_message": "Hello Peter, this is a check-in regarding your recent visit. Please call our office to schedule your next appointment or let us know if you need anything before then.",
+        "agent_rationale": "Classified as routine based on priority_signal='routine' (conditions on file: none). Chose send_routine_reminder to route this to the appropriate follow-up path.",
+        "record_valid": true,
+        "validation_errors": [],
+        "pushed_at": "2026-09-02T18:00:52.913274+00:00",
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "input_record": {
+        "id": "patient-6b9bd741-baa7-4370-8d33-441e7f134ae4",
+        "source": "fhir_patient",
+        "name": "Estrella Hettinger",
+        "contact_info": {
+          "email": null,
+          "phone": "555-687-7890",
+          "preferred_channel": "phone"
+        },
+        "context": {
+          "age": 19,
+          "gender": "female",
+          "city": "Plymouth",
+          "conditions": [],
+          "upcoming_or_recent_appointments": []
+        },
+        "priority_signal": "routine",
+        "raw_payload": {
+          "resourceType": "Patient",
+          "id": "6b9bd741-baa7-4370-8d33-441e7f134ae4",
+          "meta": {
+            "versionId": "4",
+            "lastUpdated": "2021-04-06T03:01:41.003-04:00",
+            "tag": [
+              {
+                "system": "https://smarthealthit.org/tags",
+                "code": "synthea-5-2019"
+              }
+            ]
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Generated by <a href=\"https://github.com/synthetichealth/synthea\">Synthea</a>.Version identifier: v2.4.0-100-g26a4b936\n .   Person seed: -7761865657840010053  Population seed: 1559319163074</div>"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+              "extension": [
+                {
+                  "url": "ombCategory",
+                  "valueCoding": {
+                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                    "code": "2106-3",
+                    "display": "White"
+                  }
+                },
+                {
+                  "url": "text",
+                  "valueString": "White"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+              "extension": [
+                {
+                  "url": "ombCategory",
+                  "valueCoding": {
+                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                    "code": "2186-5",
+                    "display": "Not Hispanic or Latino"
+                  }
+                },
+                {
+                  "url": "text",
+                  "valueString": "Not Hispanic or Latino"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+              "valueString": "Roni Wyman"
+            },
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+              "valueCode": "F"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+              "valueAddress": {
+                "city": "Lowell",
+                "state": "Massachusetts",
+                "country": "US"
+              }
+            },
+            {
+              "url": "http://synthetichealth.github.io/synthea/disability-adjusted-life-years",
+              "valueDecimal": 0
+            },
+            {
+              "url": "http://synthetichealth.github.io/synthea/quality-adjusted-life-years",
+              "valueDecimal": 13
+            }
+          ],
+          "identifier": [
+            {
+              "system": "https://github.com/synthetichealth/synthea",
+              "value": "e3f14a47-fdfd-49ee-a571-a540092df424"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "MR",
+                    "display": "Medical Record Number"
+                  }
+                ],
+                "text": "Medical Record Number"
+              },
+              "system": "http://hospital.smarthealthit.org",
+              "value": "e3f14a47-fdfd-49ee-a571-a540092df424"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "SS",
+                    "display": "Social Security Number"
+                  }
+                ],
+                "text": "Social Security Number"
+              },
+              "system": "http://hl7.org/fhir/sid/us-ssn",
+              "value": "999-26-9631"
+            }
+          ],
+          "name": [
+            {
+              "use": "official",
+              "family": "Hettinger",
+              "given": [
+                "Estrella"
+              ]
+            }
+          ],
+          "telecom": [
+            {
+              "system": "phone",
+              "value": "555-687-7890",
+              "use": "home"
+            }
+          ],
+          "gender": "female",
+          "birthDate": "2007-01-30",
+          "address": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/geolocation",
+                  "extension": [
+                    {
+                      "url": "latitude",
+                      "valueDecimal": 41.958343
+                    },
+                    {
+                      "url": "longitude",
+                      "valueDecimal": -70.6638
+                    }
+                  ]
+                }
+              ],
+              "line": [
+                "861 Thiel Junction"
+              ],
+              "city": "Plymouth",
+              "state": "Massachusetts",
+              "postalCode": "02360",
+              "country": "US"
+            }
+          ],
+          "maritalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+                "code": "S",
+                "display": "Never Married"
+              }
+            ],
+            "text": "Never Married"
+          },
+          "multipleBirthBoolean": false,
+          "communication": [
+            {
+              "language": {
+                "coding": [
+                  {
+                    "system": "urn:ietf:bcp:47",
+                    "code": "en-US",
+                    "display": "English"
+                  }
+                ],
+                "text": "English"
+              }
+            }
+          ]
+        },
+        "ingested_at": "2026-09-02T17:59:57.473865+00:00",
+        "is_valid": true,
+        "validation_errors": []
+      },
+      "agent_reasoning": {
+        "record_id": "patient-6b9bd741-baa7-4370-8d33-441e7f134ae4",
+        "source": "fhir_patient",
+        "classification": "routine",
+        "action": "send_routine_reminder",
+        "message": "Hello Estrella, this is a check-in regarding your recent visit. Please call our office to schedule your next appointment or let us know if you need anything before then.",
+        "rationale": "Classified as routine based on priority_signal='routine' (conditions on file: none). Chose send_routine_reminder to route this to the appropriate follow-up path.",
+        "escalate": false
+      },
+      "cms_payload_sent": {
+        "external_id": "patient-6b9bd741-baa7-4370-8d33-441e7f134ae4",
+        "source_system": "fhir_patient",
+        "contact": {
+          "name": "Estrella Hettinger",
+          "email": null,
+          "phone": "555-687-7890",
+          "preferred_channel": "phone"
+        },
+        "classification": "routine",
+        "recommended_action": "send_routine_reminder",
+        "escalate": false,
+        "generated_message": "Hello Estrella, this is a check-in regarding your recent visit. Please call our office to schedule your next appointment or let us know if you need anything before then.",
+        "agent_rationale": "Classified as routine based on priority_signal='routine' (conditions on file: none). Chose send_routine_reminder to route this to the appropriate follow-up path.",
+        "record_valid": true,
+        "validation_errors": [],
+        "pushed_at": "2026-09-02T18:00:52.913362+00:00",
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "input_record": {
+        "id": "patient-f3721a5a-dfae-4933-b2fd-b001210c6b3b",
+        "source": "fhir_patient",
+        "name": "Jenna Hagenes",
+        "contact_info": {
+          "email": null,
+          "phone": "555-444-2497",
+          "preferred_channel": "phone"
+        },
+        "context": {
+          "age": 33,
+          "gender": "female",
+          "city": "Boston",
+          "conditions": [],
+          "upcoming_or_recent_appointments": []
+        },
+        "priority_signal": "routine",
+        "raw_payload": {
+          "resourceType": "Patient",
+          "id": "f3721a5a-dfae-4933-b2fd-b001210c6b3b",
+          "meta": {
+            "versionId": "4",
+            "lastUpdated": "2021-04-07T02:57:01.984-04:00",
+            "tag": [
+              {
+                "system": "https://smarthealthit.org/tags",
+                "code": "synthea-5-2019"
+              }
+            ]
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Generated by <a href=\"https://github.com/synthetichealth/synthea\">Synthea</a>.Version identifier: v2.4.0-100-g26a4b936\n .   Person seed: 7976422708821074441  Population seed: 1559319163074</div>"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+              "extension": [
+                {
+                  "url": "ombCategory",
+                  "valueCoding": {
+                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                    "code": "2054-5",
+                    "display": "Black or African American"
+                  }
+                },
+                {
+                  "url": "text",
+                  "valueString": "Black or African American"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+              "extension": [
+                {
+                  "url": "ombCategory",
+                  "valueCoding": {
+                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                    "code": "2186-5",
+                    "display": "Not Hispanic or Latino"
+                  }
+                },
+                {
+                  "url": "text",
+                  "valueString": "Not Hispanic or Latino"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+              "valueString": "Jaleesa Paucek"
+            },
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+              "valueCode": "F"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+              "valueAddress": {
+                "city": "Plymouth",
+                "state": "Massachusetts",
+                "country": "US"
+              }
+            },
+            {
+              "url": "http://synthetichealth.github.io/synthea/disability-adjusted-life-years",
+              "valueDecimal": 0.6201950836262706
+            },
+            {
+              "url": "http://synthetichealth.github.io/synthea/quality-adjusted-life-years",
+              "valueDecimal": 27.37980491637373
+            }
+          ],
+          "identifier": [
+            {
+              "system": "https://github.com/synthetichealth/synthea",
+              "value": "beb2d55c-2148-4762-a3f5-b06c0571eabc"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "MR",
+                    "display": "Medical Record Number"
+                  }
+                ],
+                "text": "Medical Record Number"
+              },
+              "system": "http://hospital.smarthealthit.org",
+              "value": "beb2d55c-2148-4762-a3f5-b06c0571eabc"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "SS",
+                    "display": "Social Security Number"
+                  }
+                ],
+                "text": "Social Security Number"
+              },
+              "system": "http://hl7.org/fhir/sid/us-ssn",
+              "value": "999-82-3172"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "DL",
+                    "display": "Driver's License"
+                  }
+                ],
+                "text": "Driver's License"
+              },
+              "system": "urn:oid:2.16.840.1.113883.4.3.25",
+              "value": "S99930498"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "PPN",
+                    "display": "Passport Number"
+                  }
+                ],
+                "text": "Passport Number"
+              },
+              "system": "http://standardhealthrecord.org/fhir/StructureDefinition/passportNumber",
+              "value": "X12930001X"
+            }
+          ],
+          "name": [
+            {
+              "use": "official",
+              "family": "Hagenes",
+              "given": [
+                "Jenna"
+              ],
+              "prefix": [
+                "Mrs."
+              ]
+            },
+            {
+              "use": "maiden",
+              "family": "Boyle",
+              "given": [
+                "Jenna"
+              ],
+              "prefix": [
+                "Mrs."
+              ]
+            }
+          ],
+          "telecom": [
+            {
+              "system": "phone",
+              "value": "555-444-2497",
+              "use": "home"
+            }
+          ],
+          "gender": "female",
+          "birthDate": "1992-10-08",
+          "address": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/geolocation",
+                  "extension": [
+                    {
+                      "url": "latitude",
+                      "valueDecimal": 42.338551
+                    },
+                    {
+                      "url": "longitude",
+                      "valueDecimal": -71.018253
+                    }
+                  ]
+                }
+              ],
+              "line": [
+                "361 Grimes Underpass"
+              ],
+              "city": "Boston",
+              "state": "Massachusetts",
+              "postalCode": "02108",
+              "country": "US"
+            }
+          ],
+          "maritalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+                "code": "M",
+                "display": "M"
+              }
+            ],
+            "text": "M"
+          },
+          "multipleBirthBoolean": false,
+          "communication": [
+            {
+              "language": {
+                "coding": [
+                  {
+                    "system": "urn:ietf:bcp:47",
+                    "code": "en-US",
+                    "display": "English"
+                  }
+                ],
+                "text": "English"
+              }
+            }
+          ]
+        },
+        "ingested_at": "2026-09-02T17:59:57.473890+00:00",
+        "is_valid": true,
+        "validation_errors": []
+      },
+      "agent_reasoning": {
+        "record_id": "patient-f3721a5a-dfae-4933-b2fd-b001210c6b3b",
+        "source": "fhir_patient",
+        "classification": "routine",
+        "action": "send_routine_reminder",
+        "message": "Hello Jenna, this is a check-in regarding your recent visit. Please call our office to schedule your next appointment or let us know if you need anything before then.",
+        "rationale": "Classified as routine based on priority_signal='routine' (conditions on file: none). Chose send_routine_reminder to route this to the appropriate follow-up path.",
+        "escalate": false
+      },
+      "cms_payload_sent": {
+        "external_id": "patient-f3721a5a-dfae-4933-b2fd-b001210c6b3b",
+        "source_system": "fhir_patient",
+        "contact": {
+          "name": "Jenna Hagenes",
+          "email": null,
+          "phone": "555-444-2497",
+          "preferred_channel": "phone"
+        },
+        "classification": "routine",
+        "recommended_action": "send_routine_reminder",
+        "escalate": false,
+        "generated_message": "Hello Jenna, this is a check-in regarding your recent visit. Please call our office to schedule your next appointment or let us know if you need anything before then.",
+        "agent_rationale": "Classified as routine based on priority_signal='routine' (conditions on file: none). Chose send_routine_reminder to route this to the appropriate follow-up path.",
+        "record_valid": true,
+        "validation_errors": [],
+        "pushed_at": "2026-09-02T18:00:52.913452+00:00",
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "input_record": {
+        "id": "patient-6a73c7dc-a64f-4a20-940e-f8f191525088",
+        "source": "fhir_patient",
+        "name": "Veta Nitzsche",
+        "contact_info": {
+          "email": null,
+          "phone": "555-297-5782",
+          "preferred_channel": "phone"
+        },
+        "context": {
+          "age": 55,
+          "gender": "female",
+          "city": "Westfield",
+          "conditions": [],
+          "upcoming_or_recent_appointments": []
+        },
+        "priority_signal": "routine",
+        "raw_payload": {
+          "resourceType": "Patient",
+          "id": "6a73c7dc-a64f-4a20-940e-f8f191525088",
+          "meta": {
+            "versionId": "4",
+            "lastUpdated": "2021-04-07T02:57:01.752-04:00",
+            "tag": [
+              {
+                "system": "https://smarthealthit.org/tags",
+                "code": "synthea-5-2019"
+              }
+            ]
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Generated by <a href=\"https://github.com/synthetichealth/synthea\">Synthea</a>.Version identifier: v2.4.0-100-g26a4b936\n .   Person seed: -1960481424937872821  Population seed: 1559319163074</div>"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+              "extension": [
+                {
+                  "url": "ombCategory",
+                  "valueCoding": {
+                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                    "code": "2106-3",
+                    "display": "White"
+                  }
+                },
+                {
+                  "url": "text",
+                  "valueString": "White"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+              "extension": [
+                {
+                  "url": "ombCategory",
+                  "valueCoding": {
+                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                    "code": "2186-5",
+                    "display": "Not Hispanic or Latino"
+                  }
+                },
+                {
+                  "url": "text",
+                  "valueString": "Not Hispanic or Latino"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+              "valueString": "Tresa Altenwerth"
+            },
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+              "valueCode": "F"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+              "valueAddress": {
+                "city": "Worcester",
+                "state": "Massachusetts",
+                "country": "US"
+              }
+            },
+            {
+              "url": "http://synthetichealth.github.io/synthea/disability-adjusted-life-years",
+              "valueDecimal": 0.09205853416207824
+            },
+            {
+              "url": "http://synthetichealth.github.io/synthea/quality-adjusted-life-years",
+              "valueDecimal": 49.90794146583792
+            }
+          ],
+          "identifier": [
+            {
+              "system": "https://github.com/synthetichealth/synthea",
+              "value": "2df90d6d-67fe-4c32-a43a-06562b9f7384"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "MR",
+                    "display": "Medical Record Number"
+                  }
+                ],
+                "text": "Medical Record Number"
+              },
+              "system": "http://hospital.smarthealthit.org",
+              "value": "2df90d6d-67fe-4c32-a43a-06562b9f7384"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "SS",
+                    "display": "Social Security Number"
+                  }
+                ],
+                "text": "Social Security Number"
+              },
+              "system": "http://hl7.org/fhir/sid/us-ssn",
+              "value": "999-68-9484"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "DL",
+                    "display": "Driver's License"
+                  }
+                ],
+                "text": "Driver's License"
+              },
+              "system": "urn:oid:2.16.840.1.113883.4.3.25",
+              "value": "S99962389"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "PPN",
+                    "display": "Passport Number"
+                  }
+                ],
+                "text": "Passport Number"
+              },
+              "system": "http://standardhealthrecord.org/fhir/StructureDefinition/passportNumber",
+              "value": "X73724447X"
+            }
+          ],
+          "name": [
+            {
+              "use": "official",
+              "family": "Nitzsche",
+              "given": [
+                "Veta"
+              ],
+              "prefix": [
+                "Mrs."
+              ]
+            },
+            {
+              "use": "maiden",
+              "family": "Boehm",
+              "given": [
+                "Veta"
+              ],
+              "prefix": [
+                "Mrs."
+              ]
+            }
+          ],
+          "telecom": [
+            {
+              "system": "phone",
+              "value": "555-297-5782",
+              "use": "home"
+            }
+          ],
+          "gender": "female",
+          "birthDate": "1970-11-04",
+          "address": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/geolocation",
+                  "extension": [
+                    {
+                      "url": "latitude",
+                      "valueDecimal": 42.138838
+                    },
+                    {
+                      "url": "longitude",
+                      "valueDecimal": -72.755911
+                    }
+                  ]
+                }
+              ],
+              "line": [
+                "197 Hyatt Road Apt 80"
+              ],
+              "city": "Westfield",
+              "state": "Massachusetts",
+              "postalCode": "01085",
+              "country": "US"
+            }
+          ],
+          "maritalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+                "code": "M",
+                "display": "M"
+              }
+            ],
+            "text": "M"
+          },
+          "multipleBirthBoolean": false,
+          "communication": [
+            {
+              "language": {
+                "coding": [
+                  {
+                    "system": "urn:ietf:bcp:47",
+                    "code": "en-US",
+                    "display": "English"
+                  }
+                ],
+                "text": "English"
+              }
+            }
+          ]
+        },
+        "ingested_at": "2026-09-02T17:59:57.473914+00:00",
+        "is_valid": true,
+        "validation_errors": []
+      },
+      "agent_reasoning": {
+        "record_id": "patient-6a73c7dc-a64f-4a20-940e-f8f191525088",
+        "source": "fhir_patient",
+        "classification": "routine",
+        "action": "send_routine_reminder",
+        "message": "Hello Veta, this is a check-in regarding your recent visit. Please call our office to schedule your next appointment or let us know if you need anything before then.",
+        "rationale": "Classified as routine based on priority_signal='routine' (conditions on file: none). Chose send_routine_reminder to route this to the appropriate follow-up path.",
+        "escalate": false
+      },
+      "cms_payload_sent": {
+        "external_id": "patient-6a73c7dc-a64f-4a20-940e-f8f191525088",
+        "source_system": "fhir_patient",
+        "contact": {
+          "name": "Veta Nitzsche",
+          "email": null,
+          "phone": "555-297-5782",
+          "preferred_channel": "phone"
+        },
+        "classification": "routine",
+        "recommended_action": "send_routine_reminder",
+        "escalate": false,
+        "generated_message": "Hello Veta, this is a check-in regarding your recent visit. Please call our office to schedule your next appointment or let us know if you need anything before then.",
+        "agent_rationale": "Classified as routine based on priority_signal='routine' (conditions on file: none). Chose send_routine_reminder to route this to the appropriate follow-up path.",
+        "record_valid": true,
+        "validation_errors": [],
+        "pushed_at": "2026-09-02T18:00:52.913539+00:00",
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "input_record": {
+        "id": "patient-9d2f59f0-f9b8-4794-877d-24ec6bb875fa",
+        "source": "fhir_patient",
+        "name": "Malcom Harris",
+        "contact_info": {
+          "email": null,
+          "phone": "555-187-6994",
+          "preferred_channel": "phone"
+        },
+        "context": {
+          "age": 61,
+          "gender": "male",
+          "city": "Yarmouth",
+          "conditions": [],
+          "upcoming_or_recent_appointments": []
+        },
+        "priority_signal": "routine",
+        "raw_payload": {
+          "resourceType": "Patient",
+          "id": "9d2f59f0-f9b8-4794-877d-24ec6bb875fa",
+          "meta": {
+            "versionId": "6",
+            "lastUpdated": "2026-02-07T02:19:27.769-05:00",
+            "tag": [
+              {
+                "system": "https://smarthealthit.org/tags",
+                "code": "synthea-5-2019"
+              }
+            ]
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Generated by <a href=\"https://github.com/synthetichealth/synthea\">Synthea</a>.Version identifier: v2.4.0-100-g26a4b936\n .   Person seed: 8060768468821611022  Population seed: 1559319163074</div>"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+              "extension": [
+                {
+                  "url": "ombCategory",
+                  "valueCoding": {
+                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                    "code": "2106-3",
+                    "display": "White"
+                  }
+                },
+                {
+                  "url": "text",
+                  "valueString": "White"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+              "extension": [
+                {
+                  "url": "ombCategory",
+                  "valueCoding": {
+                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                    "code": "2186-5",
+                    "display": "Not Hispanic or Latino"
+                  }
+                },
+                {
+                  "url": "text",
+                  "valueString": "Not Hispanic or Latino"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+              "valueString": "Carie Leuschke"
+            },
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+              "valueCode": "M"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+              "valueAddress": {
+                "city": "Plymouth",
+                "state": "Massachusetts",
+                "country": "US"
+              }
+            },
+            {
+              "url": "http://synthetichealth.github.io/synthea/disability-adjusted-life-years",
+              "valueDecimal": 6.614250600362117
+            },
+            {
+              "url": "http://synthetichealth.github.io/synthea/quality-adjusted-life-years",
+              "valueDecimal": 49.38574939963788
+            }
+          ],
+          "identifier": [
+            {
+              "system": "https://github.com/synthetichealth/synthea",
+              "value": "2b6258e3-b5d9-4deb-88f4-ee1ef906dd03"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "MR",
+                    "display": "Medical Record Number"
+                  }
+                ],
+                "text": "Medical Record Number"
+              },
+              "system": "http://hospital.smarthealthit.org",
+              "value": "2b6258e3-b5d9-4deb-88f4-ee1ef906dd03"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "SS",
+                    "display": "Social Security Number"
+                  }
+                ],
+                "text": "Social Security Number"
+              },
+              "system": "http://hl7.org/fhir/sid/us-ssn",
+              "value": "999-40-7098"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "DL",
+                    "display": "Driver's License"
+                  }
+                ],
+                "text": "Driver's License"
+              },
+              "system": "urn:oid:2.16.840.1.113883.4.3.25",
+              "value": "S99999716"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "PPN",
+                    "display": "Passport Number"
+                  }
+                ],
+                "text": "Passport Number"
+              },
+              "system": "http://standardhealthrecord.org/fhir/StructureDefinition/passportNumber",
+              "value": "X61092449X"
+            }
+          ],
+          "name": [
+            {
+              "use": "official",
+              "family": "Harris",
+              "given": [
+                "Malcom"
+              ],
+              "prefix": [
+                "Mr."
+              ]
+            }
+          ],
+          "telecom": [
+            {
+              "system": "phone",
+              "value": "555-187-6994",
+              "use": "home"
+            }
+          ],
+          "gender": "male",
+          "birthDate": "1964-11-06",
+          "address": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/geolocation",
+                  "extension": [
+                    {
+                      "url": "latitude",
+                      "valueDecimal": 41.674949
+                    },
+                    {
+                      "url": "longitude",
+                      "valueDecimal": -70.226014
+                    }
+                  ]
+                }
+              ],
+              "line": [
+                "736 Runolfsson Fort Unit 54"
+              ],
+              "city": "Yarmouth",
+              "state": "Massachusetts",
+              "country": "US"
+            }
+          ],
+          "maritalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+                "code": "M",
+                "display": "M"
+              }
+            ],
+            "text": "M"
+          },
+          "multipleBirthBoolean": false,
+          "communication": [
+            {
+              "language": {
+                "coding": [
+                  {
+                    "system": "urn:ietf:bcp:47",
+                    "code": "en-US",
+                    "display": "English"
+                  }
+                ],
+                "text": "English"
+              }
+            }
+          ]
+        },
+        "ingested_at": "2026-09-02T17:59:57.473937+00:00",
+        "is_valid": true,
+        "validation_errors": []
+      },
+      "agent_reasoning": {
+        "record_id": "patient-9d2f59f0-f9b8-4794-877d-24ec6bb875fa",
+        "source": "fhir_patient",
+        "classification": "routine",
+        "action": "send_routine_reminder",
+        "message": "Hello Malcom, this is a check-in regarding your recent visit. Please call our office to schedule your next appointment or let us know if you need anything before then.",
+        "rationale": "Classified as routine based on priority_signal='routine' (conditions on file: none). Chose send_routine_reminder to route this to the appropriate follow-up path.",
+        "escalate": false
+      },
+      "cms_payload_sent": {
+        "external_id": "patient-9d2f59f0-f9b8-4794-877d-24ec6bb875fa",
+        "source_system": "fhir_patient",
+        "contact": {
+          "name": "Malcom Harris",
+          "email": null,
+          "phone": "555-187-6994",
+          "preferred_channel": "phone"
+        },
+        "classification": "routine",
+        "recommended_action": "send_routine_reminder",
+        "escalate": false,
+        "generated_message": "Hello Malcom, this is a check-in regarding your recent visit. Please call our office to schedule your next appointment or let us know if you need anything before then.",
+        "agent_rationale": "Classified as routine based on priority_signal='routine' (conditions on file: none). Chose send_routine_reminder to route this to the appropriate follow-up path.",
+        "record_valid": true,
+        "validation_errors": [],
+        "pushed_at": "2026-09-02T18:00:52.913630+00:00",
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "input_record": {
+        "id": "patient-437ea3a5-f3b6-4cec-8bb3-a426da296edd",
+        "source": "fhir_patient",
+        "name": "Rory Schulist",
+        "contact_info": {
+          "email": null,
+          "phone": "555-255-1705",
+          "preferred_channel": "phone"
+        },
+        "context": {
+          "age": 67,
+          "gender": "female",
+          "city": "Chicopee",
+          "conditions": [],
+          "upcoming_or_recent_appointments": []
+        },
+        "priority_signal": "routine",
+        "raw_payload": {
+          "resourceType": "Patient",
+          "id": "437ea3a5-f3b6-4cec-8bb3-a426da296edd",
+          "meta": {
+            "versionId": "4",
+            "lastUpdated": "2021-04-07T02:57:02.465-04:00",
+            "tag": [
+              {
+                "system": "https://smarthealthit.org/tags",
+                "code": "synthea-5-2019"
+              }
+            ]
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Generated by <a href=\"https://github.com/synthetichealth/synthea\">Synthea</a>.Version identifier: v2.4.0-100-g26a4b936\n .   Person seed: -920050243466979100  Population seed: 1559319163074</div>"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+              "extension": [
+                {
+                  "url": "ombCategory",
+                  "valueCoding": {
+                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                    "code": "2106-3",
+                    "display": "White"
+                  }
+                },
+                {
+                  "url": "text",
+                  "valueString": "White"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+              "extension": [
+                {
+                  "url": "ombCategory",
+                  "valueCoding": {
+                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                    "code": "2186-5",
+                    "display": "Not Hispanic or Latino"
+                  }
+                },
+                {
+                  "url": "text",
+                  "valueString": "Not Hispanic or Latino"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+              "valueString": "Gillian Cormier"
+            },
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+              "valueCode": "F"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+              "valueAddress": {
+                "city": "Brewster",
+                "state": "Massachusetts",
+                "country": "US"
+              }
+            },
+            {
+              "url": "http://synthetichealth.github.io/synthea/disability-adjusted-life-years",
+              "valueDecimal": 2.9400602730182883
+            },
+            {
+              "url": "http://synthetichealth.github.io/synthea/quality-adjusted-life-years",
+              "valueDecimal": 59.05993972698171
+            }
+          ],
+          "identifier": [
+            {
+              "system": "https://github.com/synthetichealth/synthea",
+              "value": "da66e77d-9258-451d-915a-9ed57822b320"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "MR",
+                    "display": "Medical Record Number"
+                  }
+                ],
+                "text": "Medical Record Number"
+              },
+              "system": "http://hospital.smarthealthit.org",
+              "value": "da66e77d-9258-451d-915a-9ed57822b320"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "SS",
+                    "display": "Social Security Number"
+                  }
+                ],
+                "text": "Social Security Number"
+              },
+              "system": "http://hl7.org/fhir/sid/us-ssn",
+              "value": "999-88-2606"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "DL",
+                    "display": "Driver's License"
+                  }
+                ],
+                "text": "Driver's License"
+              },
+              "system": "urn:oid:2.16.840.1.113883.4.3.25",
+              "value": "S99936067"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "PPN",
+                    "display": "Passport Number"
+                  }
+                ],
+                "text": "Passport Number"
+              },
+              "system": "http://standardhealthrecord.org/fhir/StructureDefinition/passportNumber",
+              "value": "X82603008X"
+            }
+          ],
+          "name": [
+            {
+              "use": "official",
+              "family": "Schulist",
+              "given": [
+                "Rory"
+              ],
+              "prefix": [
+                "Mrs."
+              ]
+            },
+            {
+              "use": "maiden",
+              "family": "Goldner",
+              "given": [
+                "Rory"
+              ],
+              "prefix": [
+                "Mrs."
+              ]
+            }
+          ],
+          "telecom": [
+            {
+              "system": "phone",
+              "value": "555-255-1705",
+              "use": "home"
+            }
+          ],
+          "gender": "female",
+          "birthDate": "1958-10-18",
+          "address": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/geolocation",
+                  "extension": [
+                    {
+                      "url": "latitude",
+                      "valueDecimal": 42.175668
+                    },
+                    {
+                      "url": "longitude",
+                      "valueDecimal": -72.572257
+                    }
+                  ]
+                }
+              ],
+              "line": [
+                "459 McKenzie Heights Unit 77"
+              ],
+              "city": "Chicopee",
+              "state": "Massachusetts",
+              "postalCode": "01013",
+              "country": "US"
+            }
+          ],
+          "maritalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+                "code": "M",
+                "display": "M"
+              }
+            ],
+            "text": "M"
+          },
+          "multipleBirthBoolean": false,
+          "communication": [
+            {
+              "language": {
+                "coding": [
+                  {
+                    "system": "urn:ietf:bcp:47",
+                    "code": "en-US",
+                    "display": "English"
+                  }
+                ],
+                "text": "English"
+              }
+            }
+          ]
+        },
+        "ingested_at": "2026-09-02T17:59:57.473958+00:00",
+        "is_valid": true,
+        "validation_errors": []
+      },
+      "agent_reasoning": {
+        "record_id": "patient-437ea3a5-f3b6-4cec-8bb3-a426da296edd",
+        "source": "fhir_patient",
+        "classification": "routine",
+        "action": "send_routine_reminder",
+        "message": "Hello Rory, this is a check-in regarding your recent visit. Please call our office to schedule your next appointment or let us know if you need anything before then.",
+        "rationale": "Classified as routine based on priority_signal='routine' (conditions on file: none). Chose send_routine_reminder to route this to the appropriate follow-up path.",
+        "escalate": false
+      },
+      "cms_payload_sent": {
+        "external_id": "patient-437ea3a5-f3b6-4cec-8bb3-a426da296edd",
+        "source_system": "fhir_patient",
+        "contact": {
+          "name": "Rory Schulist",
+          "email": null,
+          "phone": "555-255-1705",
+          "preferred_channel": "phone"
+        },
+        "classification": "routine",
+        "recommended_action": "send_routine_reminder",
+        "escalate": false,
+        "generated_message": "Hello Rory, this is a check-in regarding your recent visit. Please call our office to schedule your next appointment or let us know if you need anything before then.",
+        "agent_rationale": "Classified as routine based on priority_signal='routine' (conditions on file: none). Chose send_routine_reminder to route this to the appropriate follow-up path.",
+        "record_valid": true,
+        "validation_errors": [],
+        "pushed_at": "2026-09-02T18:00:52.913716+00:00",
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "input_record": {
+        "id": "patient-d4456fef-9f85-47c6-81c3-1dc1c2924326",
+        "source": "fhir_patient",
+        "name": "Miguel Garibay",
+        "contact_info": {
+          "email": null,
+          "phone": "555-434-4270",
+          "preferred_channel": "phone"
+        },
+        "context": {
+          "age": 89,
+          "gender": "male",
+          "city": "Billerica",
+          "conditions": [],
+          "upcoming_or_recent_appointments": []
+        },
+        "priority_signal": "routine",
+        "raw_payload": {
+          "resourceType": "Patient",
+          "id": "d4456fef-9f85-47c6-81c3-1dc1c2924326",
+          "meta": {
+            "versionId": "4",
+            "lastUpdated": "2021-04-07T02:57:02.442-04:00",
+            "tag": [
+              {
+                "system": "https://smarthealthit.org/tags",
+                "code": "synthea-5-2019"
+              }
+            ]
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Generated by <a href=\"https://github.com/synthetichealth/synthea\">Synthea</a>.Version identifier: v2.4.0-100-g26a4b936\n .   Person seed: -8664835935992311791  Population seed: 1559319163074</div>"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+              "extension": [
+                {
+                  "url": "ombCategory",
+                  "valueCoding": {
+                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                    "code": "2054-5",
+                    "display": "Black or African American"
+                  }
+                },
+                {
+                  "url": "text",
+                  "valueString": "Black or African American"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+              "extension": [
+                {
+                  "url": "ombCategory",
+                  "valueCoding": {
+                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                    "code": "2186-5",
+                    "display": "Not Hispanic or Latino"
+                  }
+                },
+                {
+                  "url": "text",
+                  "valueString": "Not Hispanic or Latino"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+              "valueString": "Dorotea Nieves"
+            },
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+              "valueCode": "M"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+              "valueAddress": {
+                "city": "Salisbury",
+                "state": "Saint Joseph Parish",
+                "country": "DM"
+              }
+            },
+            {
+              "url": "http://synthetichealth.github.io/synthea/disability-adjusted-life-years",
+              "valueDecimal": 0.7844133746489961
+            },
+            {
+              "url": "http://synthetichealth.github.io/synthea/quality-adjusted-life-years",
+              "valueDecimal": 71.21558662535101
+            }
+          ],
+          "identifier": [
+            {
+              "system": "https://github.com/synthetichealth/synthea",
+              "value": "0ce26404-7c79-45e1-8cd0-2e0d37740aaf"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "MR",
+                    "display": "Medical Record Number"
+                  }
+                ],
+                "text": "Medical Record Number"
+              },
+              "system": "http://hospital.smarthealthit.org",
+              "value": "0ce26404-7c79-45e1-8cd0-2e0d37740aaf"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "SS",
+                    "display": "Social Security Number"
+                  }
+                ],
+                "text": "Social Security Number"
+              },
+              "system": "http://hl7.org/fhir/sid/us-ssn",
+              "value": "999-98-9700"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "DL",
+                    "display": "Driver's License"
+                  }
+                ],
+                "text": "Driver's License"
+              },
+              "system": "urn:oid:2.16.840.1.113883.4.3.25",
+              "value": "S99978943"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "PPN",
+                    "display": "Passport Number"
+                  }
+                ],
+                "text": "Passport Number"
+              },
+              "system": "http://standardhealthrecord.org/fhir/StructureDefinition/passportNumber",
+              "value": "X12848725X"
+            }
+          ],
+          "name": [
+            {
+              "use": "official",
+              "family": "Garibay",
+              "given": [
+                "Miguel"
+              ],
+              "prefix": [
+                "Mr."
+              ]
+            }
+          ],
+          "telecom": [
+            {
+              "system": "phone",
+              "value": "555-434-4270",
+              "use": "home"
+            }
+          ],
+          "gender": "male",
+          "birthDate": "1937-02-13",
+          "deceasedDateTime": "2009-12-27T17:49:34+00:00",
+          "address": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/geolocation",
+                  "extension": [
+                    {
+                      "url": "latitude",
+                      "valueDecimal": 42.559673
+                    },
+                    {
+                      "url": "longitude",
+                      "valueDecimal": -71.260947
+                    }
+                  ]
+                }
+              ],
+              "line": [
+                "143 Medhurst Crossing"
+              ],
+              "city": "Billerica",
+              "state": "Massachusetts",
+              "postalCode": "01821",
+              "country": "US"
+            }
+          ],
+          "maritalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+                "code": "M",
+                "display": "M"
+              }
+            ],
+            "text": "M"
+          },
+          "multipleBirthBoolean": false,
+          "communication": [
+            {
+              "language": {
+                "coding": [
+                  {
+                    "system": "urn:ietf:bcp:47",
+                    "code": "es",
+                    "display": "Spanish"
+                  }
+                ],
+                "text": "Spanish"
+              }
+            }
+          ]
+        },
+        "ingested_at": "2026-09-02T17:59:57.473981+00:00",
+        "is_valid": true,
+        "validation_errors": []
+      },
+      "agent_reasoning": {
+        "record_id": "patient-d4456fef-9f85-47c6-81c3-1dc1c2924326",
+        "source": "fhir_patient",
+        "classification": "routine",
+        "action": "send_routine_reminder",
+        "message": "Hello Miguel, this is a check-in regarding your recent visit. Please call our office to schedule your next appointment or let us know if you need anything before then.",
+        "rationale": "Classified as routine based on priority_signal='routine' (conditions on file: none). Chose send_routine_reminder to route this to the appropriate follow-up path.",
+        "escalate": false
+      },
+      "cms_payload_sent": {
+        "external_id": "patient-d4456fef-9f85-47c6-81c3-1dc1c2924326",
+        "source_system": "fhir_patient",
+        "contact": {
+          "name": "Miguel Garibay",
+          "email": null,
+          "phone": "555-434-4270",
+          "preferred_channel": "phone"
+        },
+        "classification": "routine",
+        "recommended_action": "send_routine_reminder",
+        "escalate": false,
+        "generated_message": "Hello Miguel, this is a check-in regarding your recent visit. Please call our office to schedule your next appointment or let us know if you need anything before then.",
+        "agent_rationale": "Classified as routine based on priority_signal='routine' (conditions on file: none). Chose send_routine_reminder to route this to the appropriate follow-up path.",
+        "record_valid": true,
+        "validation_errors": [],
+        "pushed_at": "2026-09-02T18:00:52.913802+00:00",
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "input_record": {
+        "id": "patient-13a00221-8417-4973-961e-e21b32ece95a",
+        "source": "fhir_patient",
+        "name": "Virginia Mercado",
+        "contact_info": {
+          "email": null,
+          "phone": "555-460-4462",
+          "preferred_channel": "phone"
+        },
+        "context": {
+          "age": 57,
+          "gender": "female",
+          "city": "Westwood",
+          "conditions": [],
+          "upcoming_or_recent_appointments": []
+        },
+        "priority_signal": "routine",
+        "raw_payload": {
+          "resourceType": "Patient",
+          "id": "13a00221-8417-4973-961e-e21b32ece95a",
+          "meta": {
+            "versionId": "6",
+            "lastUpdated": "2026-02-07T02:19:27.846-05:00",
+            "tag": [
+              {
+                "system": "https://smarthealthit.org/tags",
+                "code": "synthea-5-2019"
+              }
+            ]
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Generated by <a href=\"https://github.com/synthetichealth/synthea\">Synthea</a>.Version identifier: v2.4.0-100-g26a4b936\n .   Person seed: 7560299236446519848  Population seed: 1559319163074</div>"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+              "extension": [
+                {
+                  "url": "ombCategory",
+                  "valueCoding": {
+                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                    "code": "2135-2",
+                    "display": "Other"
+                  }
+                },
+                {
+                  "url": "text",
+                  "valueString": "Other"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+              "extension": [
+                {
+                  "url": "ombCategory",
+                  "valueCoding": {
+                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                    "code": "2186-5",
+                    "display": "Not Hispanic or Latino"
+                  }
+                },
+                {
+                  "url": "text",
+                  "valueString": "Not Hispanic or Latino"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+              "valueString": "Lorena Flores"
+            },
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+              "valueCode": "F"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+              "valueAddress": {
+                "city": "Carolina",
+                "state": "Puerto Rico",
+                "country": "PR"
+              }
+            },
+            {
+              "url": "http://synthetichealth.github.io/synthea/disability-adjusted-life-years",
+              "valueDecimal": 0.5144207434197337
+            },
+            {
+              "url": "http://synthetichealth.github.io/synthea/quality-adjusted-life-years",
+              "valueDecimal": 50.485579256580266
+            }
+          ],
+          "identifier": [
+            {
+              "system": "https://github.com/synthetichealth/synthea",
+              "value": "ae79d967-05dd-4ea0-8793-16c538c12ae1"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "MR",
+                    "display": "Medical Record Number"
+                  }
+                ],
+                "text": "Medical Record Number"
+              },
+              "system": "http://hospital.smarthealthit.org",
+              "value": "ae79d967-05dd-4ea0-8793-16c538c12ae1"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "SS",
+                    "display": "Social Security Number"
+                  }
+                ],
+                "text": "Social Security Number"
+              },
+              "system": "http://hl7.org/fhir/sid/us-ssn",
+              "value": "999-42-4825"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "DL",
+                    "display": "Driver's License"
+                  }
+                ],
+                "text": "Driver's License"
+              },
+              "system": "urn:oid:2.16.840.1.113883.4.3.25",
+              "value": "S99995677"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "PPN",
+                    "display": "Passport Number"
+                  }
+                ],
+                "text": "Passport Number"
+              },
+              "system": "http://standardhealthrecord.org/fhir/StructureDefinition/passportNumber",
+              "value": "X38486568X"
+            }
+          ],
+          "name": [
+            {
+              "use": "official",
+              "family": "Mercado",
+              "given": [
+                "Virginia"
+              ],
+              "prefix": [
+                "Mrs."
+              ]
+            },
+            {
+              "use": "maiden",
+              "family": "Miramontes",
+              "given": [
+                "Virginia"
+              ],
+              "prefix": [
+                "Mrs."
+              ]
+            }
+          ],
+          "telecom": [
+            {
+              "system": "phone",
+              "value": "555-460-4462",
+              "use": "home"
+            }
+          ],
+          "gender": "female",
+          "birthDate": "1969-04-15",
+          "address": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/geolocation",
+                  "extension": [
+                    {
+                      "url": "latitude",
+                      "valueDecimal": 42.219645
+                    },
+                    {
+                      "url": "longitude",
+                      "valueDecimal": -71.216768
+                    }
+                  ]
+                }
+              ],
+              "line": [
+                "294 Hane Street Apt 65"
+              ],
+              "city": "Westwood",
+              "state": "Massachusetts",
+              "postalCode": "02090",
+              "country": "US"
+            }
+          ],
+          "maritalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+                "code": "M",
+                "display": "M"
+              }
+            ],
+            "text": "M"
+          },
+          "multipleBirthBoolean": false,
+          "communication": [
+            {
+              "language": {
+                "coding": [
+                  {
+                    "system": "urn:ietf:bcp:47",
+                    "code": "es",
+                    "display": "Spanish"
+                  }
+                ],
+                "text": "Spanish"
+              }
+            }
+          ]
+        },
+        "ingested_at": "2026-09-02T17:59:57.474002+00:00",
+        "is_valid": true,
+        "validation_errors": []
+      },
+      "agent_reasoning": {
+        "record_id": "patient-13a00221-8417-4973-961e-e21b32ece95a",
+        "source": "fhir_patient",
+        "classification": "routine",
+        "action": "send_routine_reminder",
+        "message": "Hello Virginia, this is a check-in regarding your recent visit. Please call our office to schedule your next appointment or let us know if you need anything before then.",
+        "rationale": "Classified as routine based on priority_signal='routine' (conditions on file: none). Chose send_routine_reminder to route this to the appropriate follow-up path.",
+        "escalate": false
+      },
+      "cms_payload_sent": {
+        "external_id": "patient-13a00221-8417-4973-961e-e21b32ece95a",
+        "source_system": "fhir_patient",
+        "contact": {
+          "name": "Virginia Mercado",
+          "email": null,
+          "phone": "555-460-4462",
+          "preferred_channel": "phone"
+        },
+        "classification": "routine",
+        "recommended_action": "send_routine_reminder",
+        "escalate": false,
+        "generated_message": "Hello Virginia, this is a check-in regarding your recent visit. Please call our office to schedule your next appointment or let us know if you need anything before then.",
+        "agent_rationale": "Classified as routine based on priority_signal='routine' (conditions on file: none). Chose send_routine_reminder to route this to the appropriate follow-up path.",
+        "record_valid": true,
+        "validation_errors": [],
+        "pushed_at": "2026-09-02T18:00:52.913888+00:00",
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "input_record": {
+        "id": "patient-feb67a40-0da5-4855-a7b2-2b5e11f48c5f",
+        "source": "fhir_patient",
+        "name": "Nona Kris",
+        "contact_info": {
+          "email": null,
+          "phone": "555-655-5323",
+          "preferred_channel": "phone"
+        },
+        "context": {
+          "age": 102,
+          "gender": "female",
+          "city": "Weston",
+          "conditions": [],
+          "upcoming_or_recent_appointments": []
+        },
+        "priority_signal": "routine",
+        "raw_payload": {
+          "resourceType": "Patient",
+          "id": "feb67a40-0da5-4855-a7b2-2b5e11f48c5f",
+          "meta": {
+            "versionId": "4",
+            "lastUpdated": "2021-04-07T02:57:02.352-04:00",
+            "tag": [
+              {
+                "system": "https://smarthealthit.org/tags",
+                "code": "synthea-5-2019"
+              }
+            ]
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Generated by <a href=\"https://github.com/synthetichealth/synthea\">Synthea</a>.Version identifier: v2.4.0-100-g26a4b936\n .   Person seed: -4484441569019407865  Population seed: 1559319163074</div>"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+              "extension": [
+                {
+                  "url": "ombCategory",
+                  "valueCoding": {
+                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                    "code": "2106-3",
+                    "display": "White"
+                  }
+                },
+                {
+                  "url": "text",
+                  "valueString": "White"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+              "extension": [
+                {
+                  "url": "ombCategory",
+                  "valueCoding": {
+                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                    "code": "2186-5",
+                    "display": "Not Hispanic or Latino"
+                  }
+                },
+                {
+                  "url": "text",
+                  "valueString": "Not Hispanic or Latino"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+              "valueString": "Evonne Abernathy"
+            },
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+              "valueCode": "F"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+              "valueAddress": {
+                "city": "Belmont",
+                "state": "Massachusetts",
+                "country": "US"
+              }
+            },
+            {
+              "url": "http://synthetichealth.github.io/synthea/disability-adjusted-life-years",
+              "valueDecimal": 3.9312527275249254
+            },
+            {
+              "url": "http://synthetichealth.github.io/synthea/quality-adjusted-life-years",
+              "valueDecimal": 67.06874727247508
+            }
+          ],
+          "identifier": [
+            {
+              "system": "https://github.com/synthetichealth/synthea",
+              "value": "5f72d2e8-c56b-4288-a829-c1c1ebfad423"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "MR",
+                    "display": "Medical Record Number"
+                  }
+                ],
+                "text": "Medical Record Number"
+              },
+              "system": "http://hospital.smarthealthit.org",
+              "value": "5f72d2e8-c56b-4288-a829-c1c1ebfad423"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "SS",
+                    "display": "Social Security Number"
+                  }
+                ],
+                "text": "Social Security Number"
+              },
+              "system": "http://hl7.org/fhir/sid/us-ssn",
+              "value": "999-20-4115"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "DL",
+                    "display": "Driver's License"
+                  }
+                ],
+                "text": "Driver's License"
+              },
+              "system": "urn:oid:2.16.840.1.113883.4.3.25",
+              "value": "S99982677"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "PPN",
+                    "display": "Passport Number"
+                  }
+                ],
+                "text": "Passport Number"
+              },
+              "system": "http://standardhealthrecord.org/fhir/StructureDefinition/passportNumber",
+              "value": "X54252598X"
+            }
+          ],
+          "name": [
+            {
+              "use": "official",
+              "family": "Kris",
+              "given": [
+                "Nona"
+              ],
+              "prefix": [
+                "Ms."
+              ]
+            }
+          ],
+          "telecom": [
+            {
+              "system": "phone",
+              "value": "555-655-5323",
+              "use": "home"
+            }
+          ],
+          "gender": "female",
+          "birthDate": "1924-06-16",
+          "deceasedDateTime": "1996-10-21T21:51:36+00:00",
+          "address": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/geolocation",
+                  "extension": [
+                    {
+                      "url": "latitude",
+                      "valueDecimal": 42.360502
+                    },
+                    {
+                      "url": "longitude",
+                      "valueDecimal": -71.303433
+                    }
+                  ]
+                }
+              ],
+              "line": [
+                "774 Hilpert Haven Unit 5"
+              ],
+              "city": "Weston",
+              "state": "Massachusetts",
+              "postalCode": "02493",
+              "country": "US"
+            }
+          ],
+          "maritalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+                "code": "S",
+                "display": "S"
+              }
+            ],
+            "text": "S"
+          },
+          "multipleBirthBoolean": false,
+          "communication": [
+            {
+              "language": {
+                "coding": [
+                  {
+                    "system": "urn:ietf:bcp:47",
+                    "code": "en-US",
+                    "display": "English"
+                  }
+                ],
+                "text": "English"
+              }
+            }
+          ]
+        },
+        "ingested_at": "2026-09-02T17:59:57.474023+00:00",
+        "is_valid": true,
+        "validation_errors": []
+      },
+      "agent_reasoning": {
+        "record_id": "patient-feb67a40-0da5-4855-a7b2-2b5e11f48c5f",
+        "source": "fhir_patient",
+        "classification": "routine",
+        "action": "send_routine_reminder",
+        "message": "Hello Nona, this is a check-in regarding your recent visit. Please call our office to schedule your next appointment or let us know if you need anything before then.",
+        "rationale": "Classified as routine based on priority_signal='routine' (conditions on file: none). Chose send_routine_reminder to route this to the appropriate follow-up path.",
+        "escalate": false
+      },
+      "cms_payload_sent": {
+        "external_id": "patient-feb67a40-0da5-4855-a7b2-2b5e11f48c5f",
+        "source_system": "fhir_patient",
+        "contact": {
+          "name": "Nona Kris",
+          "email": null,
+          "phone": "555-655-5323",
+          "preferred_channel": "phone"
+        },
+        "classification": "routine",
+        "recommended_action": "send_routine_reminder",
+        "escalate": false,
+        "generated_message": "Hello Nona, this is a check-in regarding your recent visit. Please call our office to schedule your next appointment or let us know if you need anything before then.",
+        "agent_rationale": "Classified as routine based on priority_signal='routine' (conditions on file: none). Chose send_routine_reminder to route this to the appropriate follow-up path.",
+        "record_valid": true,
+        "validation_errors": [],
+        "pushed_at": "2026-09-02T18:00:52.914016+00:00",
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "input_record": {
+        "id": "patient-e86e9cae-89a3-44bf-9033-32a2d56f5113",
+        "source": "fhir_patient",
+        "name": "Tracey Witting",
+        "contact_info": {
+          "email": null,
+          "phone": "555-184-7087",
+          "preferred_channel": "phone"
+        },
+        "context": {
+          "age": 88,
+          "gender": "male",
+          "city": "New Bedford",
+          "conditions": [],
+          "upcoming_or_recent_appointments": []
+        },
+        "priority_signal": "routine",
+        "raw_payload": {
+          "resourceType": "Patient",
+          "id": "e86e9cae-89a3-44bf-9033-32a2d56f5113",
+          "meta": {
+            "versionId": "4",
+            "lastUpdated": "2021-04-07T02:57:03.039-04:00",
+            "tag": [
+              {
+                "system": "https://smarthealthit.org/tags",
+                "code": "synthea-5-2019"
+              }
+            ]
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Generated by <a href=\"https://github.com/synthetichealth/synthea\">Synthea</a>.Version identifier: v2.4.0-100-g26a4b936\n .   Person seed: -2689736920865922038  Population seed: 1559319163074</div>"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+              "extension": [
+                {
+                  "url": "ombCategory",
+                  "valueCoding": {
+                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                    "code": "2106-3",
+                    "display": "White"
+                  }
+                },
+                {
+                  "url": "text",
+                  "valueString": "White"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+              "extension": [
+                {
+                  "url": "ombCategory",
+                  "valueCoding": {
+                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                    "code": "2186-5",
+                    "display": "Not Hispanic or Latino"
+                  }
+                },
+                {
+                  "url": "text",
+                  "valueString": "Not Hispanic or Latino"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+              "valueString": "Jayme Raynor"
+            },
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+              "valueCode": "M"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+              "valueAddress": {
+                "city": "Funchal",
+                "state": "Madeira",
+                "country": "PT"
+              }
+            },
+            {
+              "url": "http://synthetichealth.github.io/synthea/disability-adjusted-life-years",
+              "valueDecimal": 14.660259780791346
+            },
+            {
+              "url": "http://synthetichealth.github.io/synthea/quality-adjusted-life-years",
+              "valueDecimal": 64.33974021920865
+            }
+          ],
+          "identifier": [
+            {
+              "system": "https://github.com/synthetichealth/synthea",
+              "value": "7fb6d3c6-15ee-4a01-904c-5ac610760b95"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "MR",
+                    "display": "Medical Record Number"
+                  }
+                ],
+                "text": "Medical Record Number"
+              },
+              "system": "http://hospital.smarthealthit.org",
+              "value": "7fb6d3c6-15ee-4a01-904c-5ac610760b95"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "SS",
+                    "display": "Social Security Number"
+                  }
+                ],
+                "text": "Social Security Number"
+              },
+              "system": "http://hl7.org/fhir/sid/us-ssn",
+              "value": "999-60-1600"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "DL",
+                    "display": "Driver's License"
+                  }
+                ],
+                "text": "Driver's License"
+              },
+              "system": "urn:oid:2.16.840.1.113883.4.3.25",
+              "value": "S99919506"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "PPN",
+                    "display": "Passport Number"
+                  }
+                ],
+                "text": "Passport Number"
+              },
+              "system": "http://standardhealthrecord.org/fhir/StructureDefinition/passportNumber",
+              "value": "X35082686X"
+            }
+          ],
+          "name": [
+            {
+              "use": "official",
+              "family": "Witting",
+              "given": [
+                "Tracey"
+              ],
+              "prefix": [
+                "Mr."
+              ]
+            }
+          ],
+          "telecom": [
+            {
+              "system": "phone",
+              "value": "555-184-7087",
+              "use": "home"
+            }
+          ],
+          "gender": "male",
+          "birthDate": "1938-04-09",
+          "deceasedDateTime": "2018-10-02T07:44:08+00:00",
+          "address": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/geolocation",
+                  "extension": [
+                    {
+                      "url": "latitude",
+                      "valueDecimal": 41.661303
+                    },
+                    {
+                      "url": "longitude",
+                      "valueDecimal": -70.937913
+                    }
+                  ]
+                }
+              ],
+              "line": [
+                "111 Kessler Parade Unit 28"
+              ],
+              "city": "New Bedford",
+              "state": "Massachusetts",
+              "postalCode": "02740",
+              "country": "US"
+            }
+          ],
+          "maritalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+                "code": "M",
+                "display": "M"
+              }
+            ],
+            "text": "M"
+          },
+          "multipleBirthBoolean": false,
+          "communication": [
+            {
+              "language": {
+                "coding": [
+                  {
+                    "system": "urn:ietf:bcp:47",
+                    "code": "pt",
+                    "display": "Portuguese"
+                  }
+                ],
+                "text": "Portuguese"
+              }
+            }
+          ]
+        },
+        "ingested_at": "2026-09-02T17:59:57.474045+00:00",
+        "is_valid": true,
+        "validation_errors": []
+      },
+      "agent_reasoning": {
+        "record_id": "patient-e86e9cae-89a3-44bf-9033-32a2d56f5113",
+        "source": "fhir_patient",
+        "classification": "routine",
+        "action": "send_routine_reminder",
+        "message": "Hello Tracey, this is a check-in regarding your recent visit. Please call our office to schedule your next appointment or let us know if you need anything before then.",
+        "rationale": "Classified as routine based on priority_signal='routine' (conditions on file: none). Chose send_routine_reminder to route this to the appropriate follow-up path.",
+        "escalate": false
+      },
+      "cms_payload_sent": {
+        "external_id": "patient-e86e9cae-89a3-44bf-9033-32a2d56f5113",
+        "source_system": "fhir_patient",
+        "contact": {
+          "name": "Tracey Witting",
+          "email": null,
+          "phone": "555-184-7087",
+          "preferred_channel": "phone"
+        },
+        "classification": "routine",
+        "recommended_action": "send_routine_reminder",
+        "escalate": false,
+        "generated_message": "Hello Tracey, this is a check-in regarding your recent visit. Please call our office to schedule your next appointment or let us know if you need anything before then.",
+        "agent_rationale": "Classified as routine based on priority_signal='routine' (conditions on file: none). Chose send_routine_reminder to route this to the appropriate follow-up path.",
+        "record_valid": true,
+        "validation_errors": [],
+        "pushed_at": "2026-09-02T18:00:52.914188+00:00",
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "input_record": {
+        "id": "patient-77155e2b-5d21-4b47-86f0-4004183d68b2",
+        "source": "fhir_patient",
+        "name": "Gayla Ferry",
+        "contact_info": {
+          "email": null,
+          "phone": "555-605-8177",
+          "preferred_channel": "phone"
+        },
+        "context": {
+          "age": 89,
+          "gender": "female",
+          "city": "Holyoke",
+          "conditions": [],
+          "upcoming_or_recent_appointments": []
+        },
+        "priority_signal": "routine",
+        "raw_payload": {
+          "resourceType": "Patient",
+          "id": "77155e2b-5d21-4b47-86f0-4004183d68b2",
+          "meta": {
+            "versionId": "4",
+            "lastUpdated": "2021-04-06T03:01:42.007-04:00",
+            "tag": [
+              {
+                "system": "https://smarthealthit.org/tags",
+                "code": "synthea-5-2019"
+              }
+            ]
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Generated by <a href=\"https://github.com/synthetichealth/synthea\">Synthea</a>.Version identifier: v2.4.0-100-g26a4b936\n .   Person seed: 7929782180126339571  Population seed: 1559319163074</div>"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+              "extension": [
+                {
+                  "url": "ombCategory",
+                  "valueCoding": {
+                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                    "code": "2106-3",
+                    "display": "White"
+                  }
+                },
+                {
+                  "url": "text",
+                  "valueString": "White"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+              "extension": [
+                {
+                  "url": "ombCategory",
+                  "valueCoding": {
+                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                    "code": "2186-5",
+                    "display": "Not Hispanic or Latino"
+                  }
+                },
+                {
+                  "url": "text",
+                  "valueString": "Not Hispanic or Latino"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+              "valueString": "Noella Kunde"
+            },
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+              "valueCode": "F"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+              "valueAddress": {
+                "city": "Brookline",
+                "state": "Massachusetts",
+                "country": "US"
+              }
+            },
+            {
+              "url": "http://synthetichealth.github.io/synthea/disability-adjusted-life-years",
+              "valueDecimal": 1.9405530801052229
+            },
+            {
+              "url": "http://synthetichealth.github.io/synthea/quality-adjusted-life-years",
+              "valueDecimal": 81.05944691989478
+            }
+          ],
+          "identifier": [
+            {
+              "system": "https://github.com/synthetichealth/synthea",
+              "value": "259bc6c6-9c1d-43e9-bd25-7539cf07f8ac"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "MR",
+                    "display": "Medical Record Number"
+                  }
+                ],
+                "text": "Medical Record Number"
+              },
+              "system": "http://hospital.smarthealthit.org",
+              "value": "259bc6c6-9c1d-43e9-bd25-7539cf07f8ac"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "SS",
+                    "display": "Social Security Number"
+                  }
+                ],
+                "text": "Social Security Number"
+              },
+              "system": "http://hl7.org/fhir/sid/us-ssn",
+              "value": "999-91-1202"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "DL",
+                    "display": "Driver's License"
+                  }
+                ],
+                "text": "Driver's License"
+              },
+              "system": "urn:oid:2.16.840.1.113883.4.3.25",
+              "value": "S99973043"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "PPN",
+                    "display": "Passport Number"
+                  }
+                ],
+                "text": "Passport Number"
+              },
+              "system": "http://standardhealthrecord.org/fhir/StructureDefinition/passportNumber",
+              "value": "X88354198X"
+            }
+          ],
+          "name": [
+            {
+              "use": "official",
+              "family": "Ferry",
+              "given": [
+                "Gayla"
+              ],
+              "prefix": [
+                "Mrs."
+              ]
+            },
+            {
+              "use": "maiden",
+              "family": "Balistreri",
+              "given": [
+                "Gayla"
+              ],
+              "prefix": [
+                "Mrs."
+              ]
+            }
+          ],
+          "telecom": [
+            {
+              "system": "phone",
+              "value": "555-605-8177",
+              "use": "home"
+            }
+          ],
+          "gender": "female",
+          "birthDate": "1937-06-03",
+          "address": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/geolocation",
+                  "extension": [
+                    {
+                      "url": "latitude",
+                      "valueDecimal": 42.211656
+                    },
+                    {
+                      "url": "longitude",
+                      "valueDecimal": -72.642448
+                    }
+                  ]
+                }
+              ],
+              "line": [
+                "382 Stehr Crossroad Suite 62"
+              ],
+              "city": "Holyoke",
+              "state": "Massachusetts",
+              "postalCode": "01040",
+              "country": "US"
+            }
+          ],
+          "maritalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+                "code": "M",
+                "display": "M"
+              }
+            ],
+            "text": "M"
+          },
+          "multipleBirthBoolean": false,
+          "communication": [
+            {
+              "language": {
+                "coding": [
+                  {
+                    "system": "urn:ietf:bcp:47",
+                    "code": "en-US",
+                    "display": "English"
+                  }
+                ],
+                "text": "English"
+              }
+            }
+          ]
+        },
+        "ingested_at": "2026-09-02T17:59:57.474065+00:00",
+        "is_valid": true,
+        "validation_errors": []
+      },
+      "agent_reasoning": {
+        "record_id": "patient-77155e2b-5d21-4b47-86f0-4004183d68b2",
+        "source": "fhir_patient",
+        "classification": "routine",
+        "action": "send_routine_reminder",
+        "message": "Hello Gayla, this is a check-in regarding your recent visit. Please call our office to schedule your next appointment or let us know if you need anything before then.",
+        "rationale": "Classified as routine based on priority_signal='routine' (conditions on file: none). Chose send_routine_reminder to route this to the appropriate follow-up path.",
+        "escalate": false
+      },
+      "cms_payload_sent": {
+        "external_id": "patient-77155e2b-5d21-4b47-86f0-4004183d68b2",
+        "source_system": "fhir_patient",
+        "contact": {
+          "name": "Gayla Ferry",
+          "email": null,
+          "phone": "555-605-8177",
+          "preferred_channel": "phone"
+        },
+        "classification": "routine",
+        "recommended_action": "send_routine_reminder",
+        "escalate": false,
+        "generated_message": "Hello Gayla, this is a check-in regarding your recent visit. Please call our office to schedule your next appointment or let us know if you need anything before then.",
+        "agent_rationale": "Classified as routine based on priority_signal='routine' (conditions on file: none). Chose send_routine_reminder to route this to the appropriate follow-up path.",
+        "record_valid": true,
+        "validation_errors": [],
+        "pushed_at": "2026-09-02T18:00:52.914388+00:00",
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "input_record": {
+        "id": "patient-e78851aa-0fe0-48bf-9a66-510d6b46386e",
+        "source": "fhir_patient",
+        "name": "Sang Luettgen",
+        "contact_info": {
+          "email": null,
+          "phone": "555-926-4169",
+          "preferred_channel": "phone"
+        },
+        "context": {
+          "age": 63,
+          "gender": "female",
+          "city": "Templeton",
+          "conditions": [],
+          "upcoming_or_recent_appointments": []
+        },
+        "priority_signal": "routine",
+        "raw_payload": {
+          "resourceType": "Patient",
+          "id": "e78851aa-0fe0-48bf-9a66-510d6b46386e",
+          "meta": {
+            "versionId": "4",
+            "lastUpdated": "2021-04-07T02:57:02.847-04:00",
+            "tag": [
+              {
+                "system": "https://smarthealthit.org/tags",
+                "code": "synthea-5-2019"
+              }
+            ]
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Generated by <a href=\"https://github.com/synthetichealth/synthea\">Synthea</a>.Version identifier: v2.4.0-100-g26a4b936\n .   Person seed: -271409349964475524  Population seed: 1559319163074</div>"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+              "extension": [
+                {
+                  "url": "ombCategory",
+                  "valueCoding": {
+                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                    "code": "2106-3",
+                    "display": "White"
+                  }
+                },
+                {
+                  "url": "text",
+                  "valueString": "White"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+              "extension": [
+                {
+                  "url": "ombCategory",
+                  "valueCoding": {
+                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                    "code": "2186-5",
+                    "display": "Not Hispanic or Latino"
+                  }
+                },
+                {
+                  "url": "text",
+                  "valueString": "Not Hispanic or Latino"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+              "valueString": "Valorie Keebler"
+            },
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+              "valueCode": "F"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+              "valueAddress": {
+                "city": "Boston",
+                "state": "Massachusetts",
+                "country": "US"
+              }
+            },
+            {
+              "url": "http://synthetichealth.github.io/synthea/disability-adjusted-life-years",
+              "valueDecimal": 2.6934802254361094
+            },
+            {
+              "url": "http://synthetichealth.github.io/synthea/quality-adjusted-life-years",
+              "valueDecimal": 54.30651977456389
+            }
+          ],
+          "identifier": [
+            {
+              "system": "https://github.com/synthetichealth/synthea",
+              "value": "7d44bc49-3772-4148-bdef-03bc6dabb9e7"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "MR",
+                    "display": "Medical Record Number"
+                  }
+                ],
+                "text": "Medical Record Number"
+              },
+              "system": "http://hospital.smarthealthit.org",
+              "value": "7d44bc49-3772-4148-bdef-03bc6dabb9e7"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "SS",
+                    "display": "Social Security Number"
+                  }
+                ],
+                "text": "Social Security Number"
+              },
+              "system": "http://hl7.org/fhir/sid/us-ssn",
+              "value": "999-11-6778"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "DL",
+                    "display": "Driver's License"
+                  }
+                ],
+                "text": "Driver's License"
+              },
+              "system": "urn:oid:2.16.840.1.113883.4.3.25",
+              "value": "S99934011"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "PPN",
+                    "display": "Passport Number"
+                  }
+                ],
+                "text": "Passport Number"
+              },
+              "system": "http://standardhealthrecord.org/fhir/StructureDefinition/passportNumber",
+              "value": "X23521844X"
+            }
+          ],
+          "name": [
+            {
+              "use": "official",
+              "family": "Luettgen",
+              "given": [
+                "Sang"
+              ],
+              "prefix": [
+                "Ms."
+              ],
+              "suffix": [
+                "PhD"
+              ]
+            }
+          ],
+          "telecom": [
+            {
+              "system": "phone",
+              "value": "555-926-4169",
+              "use": "home"
+            }
+          ],
+          "gender": "female",
+          "birthDate": "1963-03-28",
+          "address": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/geolocation",
+                  "extension": [
+                    {
+                      "url": "latitude",
+                      "valueDecimal": 42.563482
+                    },
+                    {
+                      "url": "longitude",
+                      "valueDecimal": -72.07547199999998
+                    }
+                  ]
+                }
+              ],
+              "line": [
+                "966 Wiza Brook Suite 37"
+              ],
+              "city": "Templeton",
+              "state": "Massachusetts",
+              "postalCode": "01468",
+              "country": "US"
+            }
+          ],
+          "maritalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+                "code": "S",
+                "display": "S"
+              }
+            ],
+            "text": "S"
+          },
+          "multipleBirthBoolean": false,
+          "communication": [
+            {
+              "language": {
+                "coding": [
+                  {
+                    "system": "urn:ietf:bcp:47",
+                    "code": "en-US",
+                    "display": "English"
+                  }
+                ],
+                "text": "English"
+              }
+            }
+          ]
+        },
+        "ingested_at": "2026-09-02T17:59:57.474085+00:00",
+        "is_valid": true,
+        "validation_errors": []
+      },
+      "agent_reasoning": {
+        "record_id": "patient-e78851aa-0fe0-48bf-9a66-510d6b46386e",
+        "source": "fhir_patient",
+        "classification": "routine",
+        "action": "send_routine_reminder",
+        "message": "Hello Sang, this is a check-in regarding your recent visit. Please call our office to schedule your next appointment or let us know if you need anything before then.",
+        "rationale": "Classified as routine based on priority_signal='routine' (conditions on file: none). Chose send_routine_reminder to route this to the appropriate follow-up path.",
+        "escalate": false
+      },
+      "cms_payload_sent": {
+        "external_id": "patient-e78851aa-0fe0-48bf-9a66-510d6b46386e",
+        "source_system": "fhir_patient",
+        "contact": {
+          "name": "Sang Luettgen",
+          "email": null,
+          "phone": "555-926-4169",
+          "preferred_channel": "phone"
+        },
+        "classification": "routine",
+        "recommended_action": "send_routine_reminder",
+        "escalate": false,
+        "generated_message": "Hello Sang, this is a check-in regarding your recent visit. Please call our office to schedule your next appointment or let us know if you need anything before then.",
+        "agent_rationale": "Classified as routine based on priority_signal='routine' (conditions on file: none). Chose send_routine_reminder to route this to the appropriate follow-up path.",
+        "record_valid": true,
+        "validation_errors": [],
+        "pushed_at": "2026-09-02T18:00:52.914731+00:00",
+        "schema_version": "1.0"
+      }
+    },
+    {
+      "input_record": {
+        "id": "patient-b3e91d87-e3a1-47f4-88ff-7013fd4a6a93",
+        "source": "fhir_patient",
+        "name": "Manuel Benavides",
+        "contact_info": {
+          "email": null,
+          "phone": "555-970-6908",
+          "preferred_channel": "phone"
+        },
+        "context": {
+          "age": 24,
+          "gender": "male",
+          "city": "Reading",
+          "conditions": [],
+          "upcoming_or_recent_appointments": []
+        },
+        "priority_signal": "routine",
+        "raw_payload": {
+          "resourceType": "Patient",
+          "id": "b3e91d87-e3a1-47f4-88ff-7013fd4a6a93",
+          "meta": {
+            "versionId": "4",
+            "lastUpdated": "2021-04-07T02:57:03.160-04:00",
+            "tag": [
+              {
+                "system": "https://smarthealthit.org/tags",
+                "code": "synthea-5-2019"
+              }
+            ]
+          },
+          "text": {
+            "status": "generated",
+            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Generated by <a href=\"https://github.com/synthetichealth/synthea\">Synthea</a>.Version identifier: v2.4.0-100-g26a4b936\n .   Person seed: -3249376819120431394  Population seed: 1559319163074</div>"
+          },
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+              "extension": [
+                {
+                  "url": "ombCategory",
+                  "valueCoding": {
+                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                    "code": "2054-5",
+                    "display": "Black or African American"
+                  }
+                },
+                {
+                  "url": "text",
+                  "valueString": "Black or African American"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+              "extension": [
+                {
+                  "url": "ombCategory",
+                  "valueCoding": {
+                    "system": "urn:oid:2.16.840.1.113883.6.238",
+                    "code": "2186-5",
+                    "display": "Not Hispanic or Latino"
+                  }
+                },
+                {
+                  "url": "text",
+                  "valueString": "Not Hispanic or Latino"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName",
+              "valueString": "Eva Casares"
+            },
+            {
+              "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+              "valueCode": "M"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+              "valueAddress": {
+                "city": "Roseau",
+                "state": "Saint George",
+                "country": "DM"
+              }
+            },
+            {
+              "url": "http://synthetichealth.github.io/synthea/disability-adjusted-life-years",
+              "valueDecimal": 0
+            },
+            {
+              "url": "http://synthetichealth.github.io/synthea/quality-adjusted-life-years",
+              "valueDecimal": 18
+            }
+          ],
+          "identifier": [
+            {
+              "system": "https://github.com/synthetichealth/synthea",
+              "value": "058a381d-d631-4613-952c-c3a85fc672a1"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "MR",
+                    "display": "Medical Record Number"
+                  }
+                ],
+                "text": "Medical Record Number"
+              },
+              "system": "http://hospital.smarthealthit.org",
+              "value": "058a381d-d631-4613-952c-c3a85fc672a1"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "SS",
+                    "display": "Social Security Number"
+                  }
+                ],
+                "text": "Social Security Number"
+              },
+              "system": "http://hl7.org/fhir/sid/us-ssn",
+              "value": "999-72-5697"
+            },
+            {
+              "type": {
+                "coding": [
+                  {
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                    "code": "DL",
+                    "display": "Driver's License"
+                  }
+                ],
+                "text": "Driver's License"
+              },
+              "system": "urn:oid:2.16.840.1.113883.4.3.25",
+              "value": "S99963424"
+            }
+          ],
+          "name": [
+            {
+              "use": "official",
+              "family": "Benavides",
+              "given": [
+                "Manuel"
+              ],
+              "prefix": [
+                "Mr."
+              ]
+            }
+          ],
+          "telecom": [
+            {
+              "system": "phone",
+              "value": "555-970-6908",
+              "use": "home"
+            }
+          ],
+          "gender": "male",
+          "birthDate": "2002-04-17",
+          "address": [
+            {
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/geolocation",
+                  "extension": [
+                    {
+                      "url": "latitude",
+                      "valueDecimal": 42.535183
+                    },
+                    {
+                      "url": "longitude",
+                      "valueDecimal": -71.105423
+                    }
+                  ]
+                }
+              ],
+              "line": [
+                "136 Davis Trace"
+              ],
+              "city": "Reading",
+              "state": "Massachusetts",
+              "postalCode": "01801",
+              "country": "US"
+            }
+          ],
+          "maritalStatus": {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+                "code": "S",
+                "display": "Never Married"
+              }
+            ],
+            "text": "Never Married"
+          },
+          "multipleBirthBoolean": false,
+          "communication": [
+            {
+              "language": {
+                "coding": [
+                  {
+                    "system": "urn:ietf:bcp:47",
+                    "code": "es",
+                    "display": "Spanish"
+                  }
+                ],
+                "text": "Spanish"
+              }
+            }
+          ]
+        },
+        "ingested_at": "2026-09-02T17:59:57.474112+00:00",
+        "is_valid": true,
+        "validation_errors": []
+      },
+      "agent_reasoning": {
+        "record_id": "patient-b3e91d87-e3a1-47f4-88ff-7013fd4a6a93",
+        "source": "fhir_patient",
+        "classification": "routine",
+        "action": "send_routine_reminder",
+        "message": "Hello Manuel, this is a check-in regarding your recent visit. Please call our office to schedule your next appointment or let us know if you need anything before then.",
+        "rationale": "Classified as routine based on priority_signal='routine' (conditions on file: none). Chose send_routine_reminder to route this to the appropriate follow-up path.",
+        "escalate": false
+      },
+      "cms_payload_sent": {
+        "external_id": "patient-b3e91d87-e3a1-47f4-88ff-7013fd4a6a93",
+        "source_system": "fhir_patient",
+        "contact": {
+          "name": "Manuel Benavides",
+          "email": null,
+          "phone": "555-970-6908",
+          "preferred_channel": "phone"
+        },
+        "classification": "routine",
+        "recommended_action": "send_routine_reminder",
+        "escalate": false,
+        "generated_message": "Hello Manuel, this is a check-in regarding your recent visit. Please call our office to schedule your next appointment or let us know if you need anything before then.",
+        "agent_rationale": "Classified as routine based on priority_signal='routine' (conditions on file: none). Chose send_routine_reminder to route this to the appropriate follow-up path.",
+        "record_valid": true,
+        "validation_errors": [],
+        "pushed_at": "2026-09-02T18:00:52.914884+00:00",
+        "schema_version": "1.0"
+      }
+    }
+  ]
+}
